@@ -1,0 +1,17 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "minecraft:redstone_repeater",
+            "required": false
+        },
+        {
+            "id": "minecraft:observer",
+            "required": false
+        },
+        {
+            "id": "minecraft:piston",
+            "required": false
+        }
+    ]
+}

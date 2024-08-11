@@ -1,0 +1,53 @@
+{
+    "replace": false,
+    "values": [
+        {
+			"id": "minecraft:glass_bottle",
+			"required": false
+		},
+        {
+			"id": "minecraft:glass",
+			"required": false
+		},
+        {
+			"id": "minecraft:glass_pane",
+			"required": false
+		},
+		{
+			"id": "minecraft:small_amethyst_bud",
+			"required": false
+		},
+        {
+			"id": "minecraft:medium_amethyst_bud",
+			"required": false
+		},
+        {
+			"id": "minecraft:large_amethyst_bud",
+			"required": false
+		},
+		{
+			"id": "minecraft:amethyst_cluster",
+			"required": false
+		},
+		{
+			"id": "minecraft:amethyst_shard",
+			"required": false
+		},
+		{
+			"id": "minecraft:budding_amethyst",
+			"required": false
+		},
+		{
+			"id": "minecraft:amethyst_block",
+			"required": false
+		},
+		{
+			"id": "minecraft:tinted_glass",
+			"required": false
+		},
+		{
+			"id": "minecraft:calibrated_sculk_sensor",
+			"required": false
+		}
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "minecraft:ghast_tear",
+            "required": false
+        },
+        {
+            "id": "minecraft:end_crystal",
+            "required": false
+        },
+        {
+            "id": "minecraft:beacon",
+            "required": false
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:amethyst_shard"
+    },
+    "title": {
+      "translate": "advancements.origins-classes.thaumaturge.touch_of_the_unknown.name",
+      "color": "white",
+      "bold": false,
+      "italic": false,
+      "underlined": false,
+      "strikethrough": false,
+      "obfuscated": false
+    },
+    "description": {
+      "translate": "advancements.origins-classes.thaumaturge.touch_of_the_unknown.description",
+      "color": "dark_purple",
+      "bold": false,
+      "italic": false,
+      "underlined": false,
+      "strikethrough": false,
+      "obfuscated": false
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "origins-classes:thaumaturge/fundamentals/root",
+  "criteria": {
+    "obtain_amethyst_shard": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:amethyst_shard"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "origins-classes:thaumaturge/fundamentals/strange_dreams_amethyst_shard_picked_up"
+  },
+  "sends_telemetry_event": true
+}

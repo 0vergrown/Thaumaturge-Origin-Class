@@ -1,0 +1,29 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "#minecraft:banners",
+            "required": false
+        },
+        {
+            "id": "#minecraft:beds",
+            "required": false
+        },
+        {
+            "id": "#minecraft:wool_carpets",
+            "required": false
+        },
+        {
+            "id": "#minecraft:wool",
+            "required": false
+        },
+        {
+            "id": "minecraft:string",
+            "required": false
+        },
+        {
+            "id": "minecraft:leather",
+            "required": false
+        }
+    ]
+}

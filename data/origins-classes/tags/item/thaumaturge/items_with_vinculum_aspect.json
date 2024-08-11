@@ -1,0 +1,17 @@
+{
+    "replace": false,
+    "values": [
+        {
+			"id": "minecraft:lead",
+			"required": false
+		},
+        {
+			"id": "minecraft:chain",
+			"required": false
+		},
+        {
+			"id": "minecraft:iron_bars",
+			"required": false
+		}
+    ]
+}

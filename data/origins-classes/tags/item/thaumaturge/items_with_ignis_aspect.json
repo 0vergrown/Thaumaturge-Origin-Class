@@ -1,0 +1,17 @@
+{
+    "replace": false,
+    "values": [
+        {
+			"id": "minecraft:blaze_powder",
+			"required": false
+		},
+        {
+			"id": "minecraft:magma_cream",
+			"required": false
+		},
+        {
+			"id": "minecraft:fire_charge",
+			"required": false
+		}
+    ]
+}

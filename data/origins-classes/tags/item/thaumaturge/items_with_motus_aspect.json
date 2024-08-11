@@ -1,0 +1,37 @@
+{
+    "replace": false,
+    "values": [
+        {
+			"id": "minecraft:piston",
+			"required": false
+		},
+        {
+			"id": "minecraft:sticky_piston",
+			"required": false
+		},
+        {
+			"id": "minecraft:minecart",
+			"required": false
+		},
+		{
+			"id": "minecraft:furnace_minecart",
+			"required": false
+		},
+		{
+			"id": "minecraft:chest_minecart",
+			"required": false
+		},
+		{
+			"id": "minecraft:hopper_minecart",
+			"required": false
+		},
+		{
+			"id": "minecraft:tnt_minecart",
+			"required": false
+		},
+		{
+			"id": "minecraft:elytra",
+			"required": false
+		}
+    ]
+}

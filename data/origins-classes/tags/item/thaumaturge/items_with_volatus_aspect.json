@@ -1,0 +1,17 @@
+{
+    "replace": false,
+    "values": [
+        {
+			"id": "minecraft:feather",
+			"required": false
+		},
+        {
+			"id": "minecraft:elytra",
+			"required": false
+		},
+        {
+			"id": "minecraft:phantom_membrane",
+			"required": false
+		}
+    ]
+}

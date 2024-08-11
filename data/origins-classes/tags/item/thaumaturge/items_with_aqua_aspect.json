@@ -1,0 +1,17 @@
+{
+    "replace": false,
+    "values": [
+        {
+			"id": "minecraft:water_bucket",
+			"required": false
+		},
+        {
+			"id": "minecraft:prismarine_shard",
+			"required": false
+		},
+        {
+			"id": "#minecraft:fishes",
+			"required": false
+		}
+    ]
+}

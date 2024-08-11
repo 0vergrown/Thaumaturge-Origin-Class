@@ -1,0 +1,17 @@
+{
+    "replace": false,
+    "values": [
+        {
+			"id": "minecraft:glass_bottle",
+			"required": false
+		},
+		{
+			"id": "minecraft:hopper",
+			"required": false
+		},
+		{
+			"id": "minecraft:chest",
+			"required": false
+		}
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "minecraft:player_head",
+            "required": false
+        },
+        {
+            "id": "minecraft:villager_spawn_egg",
+            "required": false
+        },
+        {
+            "id": "minecraft:compass",
+            "required": false
+        }
+    ]
+}

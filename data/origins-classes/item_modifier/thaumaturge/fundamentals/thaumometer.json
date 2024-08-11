@@ -1,0 +1,40 @@
+[
+  {
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "target": "custom_name",
+    "name": {
+      "translate": "item_modifier.thaumaturge.thaumometer.name",
+      "color": "yellow",
+      "bold": false,
+      "italic": false,
+      "underlined": false,
+      "strikethrough": false,
+      "obfuscated": false
+    }
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "translate": "item_modifier.thaumaturge.thaumometer.lore",
+        "color": "gold",
+        "bold": false,
+        "italic": false,
+        "underlined": false,
+        "strikethrough": false,
+        "obfuscated": false
+      }
+    ],
+    "mode": "replace_all"
+  },
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": "{thaumaturge:thaumometer}"
+  },
+  {
+    "function": "minecraft:set_custom_model_data",
+    "value": 383885
+  }
+]

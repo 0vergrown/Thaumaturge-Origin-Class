@@ -1,0 +1,17 @@
+{
+    "replace": false,
+    "values": [
+        {
+			"id": "minecraft:brewing_stand",
+			"required": false
+		},
+        {
+			"id": "minecraft:blaze_powder",
+			"required": false
+		},
+        {
+			"id": "minecraft:nether_wart",
+			"required": false
+		}
+    ]
+}

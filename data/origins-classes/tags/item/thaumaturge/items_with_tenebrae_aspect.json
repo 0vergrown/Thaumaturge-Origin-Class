@@ -1,0 +1,17 @@
+{
+    "replace": false,
+    "values": [
+        {
+			"id": "minecraft:black_dye",
+			"required": false
+		},
+        {
+			"id": "minecraft:obsidian",
+			"required": false
+		},
+        {
+			"id": "minecraft:wither_rose",
+			"required": false
+		}
+    ]
+}

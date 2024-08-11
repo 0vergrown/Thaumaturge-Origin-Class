@@ -1,0 +1,233 @@
+{
+   "type":"origins:multiple",
+   "create_crucible":{
+      "type":"origins:action_on_block_use",
+      "entity_action":{
+         "type":"origins:delay",
+         "action":{
+            "type":"origins:grant_advancement",
+            "advancement":"origins-classes:thaumaturge/fundamentals/discovering_alchemy",
+            "selection":"only"
+         },
+         "ticks":70
+      },
+      "block_action":{
+         "type":"origins:and",
+         "actions":[
+            {
+               "type":"origins:execute_command",
+               "command":"playsound minecraft:block.amethyst_block.chime block @p ~ ~ ~ 1.00 0.90 1.00"
+            },
+            {
+               "type":"origins:delay",
+               "action":{
+                  "type":"origins:and",
+                  "actions":[
+                     {
+                        "type":"origins:execute_command",
+                        "command":"playsound minecraft:entity.firework_rocket.blast block @p ~ ~ ~ 0.40 1.00 0.40"
+                     },
+                     {
+                        "type":"origins:execute_command",
+                        "command":"particle minecraft:witch ~ ~ ~ 0.922 0.314 0.314 0.0 16 normal @a"
+                     },
+                     {
+                        "type":"origins:execute_command",
+                        "command":"particle minecraft:cloud ~ ~ ~ 0.922 0.314 0.314 0.0 16 normal @a"
+                     },
+                     {
+                        "type":"origins:set_block",
+                        "block":"minecraft:water_cauldron"
+                     },
+                     {
+                        "type": "origins:spawn_entity",
+                        "entity_type": "minecraft:chicken",
+                        "tag":"{Silent:1b,Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,CanPickUpLoot:0b}",
+                        "entity_action": {
+                           "type": "origins:and",
+                           "actions": [
+                              {
+                                 "type": "origins:grant_power",
+                                 "power": "origins-classes:thaumaturge/alchemy/crucible",
+                                 "source": "origins-classes:thaumaturge/alchemy/crucible"
+                              },
+                              {
+                                 "type": "origins:grant_power",
+                                 "power": "origins-classes:thaumaturge/alchemy/alchemical_potions/potion_of_vitality",
+                                 "source": "origins-classes:thaumaturge/alchemy/alchemical_potions/potion_of_vitality"
+                              },
+                              {
+                                 "type": "origins:execute_command",
+                                 "command": "attribute @s additionalentityattributes:generic.hitbox_height base set 1.20"
+                              },
+                              {
+                                 "type": "origins:execute_command",
+                                 "command": "attribute @s additionalentityattributes:generic.hitbox_width base set 2.50"
+                              }
+                           ]
+                        }
+                     },
+                     {
+                        "type":"origins:offset",
+                        "action":{
+                           "type":"origins:set_block",
+                           "block":"minecraft:air"
+                        },
+                        "y":-1
+                     },
+                     {
+                        "type":"origins:offset",
+                        "action":{
+                           "type":"origins:set_block",
+                           "block":"minecraft:netherrack"
+                        },
+                        "y":-2
+                     }
+                  ]
+               },
+               "ticks":70
+            }
+         ]
+      },
+      "block_condition":{
+         "type":"origins:block",
+         "block":"minecraft:cauldron"
+      },
+      "item_condition":{
+         "type":"origins:and",
+         "conditions":[
+            {
+               "type":"origins:ingredient",
+               "ingredient":{
+                  "item":"minecraft:sugar"
+               }
+            },
+            {
+               "type":"origins:custom_data",
+               "nbt":"{thaumaturge:salis_mundus}"
+            }
+         ]
+      },
+      "directions":[
+         "north",
+         "east",
+         "south",
+         "west",
+         "up",
+         "down"
+      ],
+      "hands":[
+         "main_hand"
+      ],
+      "held_item_action":{
+         "type":"origins:consume",
+         "amount":1
+      },
+      "usage_phases":[
+         "item"
+      ],
+      "action_result":"success",
+      "condition":{
+         "type":"origins:advancement",
+         "advancement":"origins-classes:thaumaturge/fundamentals/first_steps"
+      }
+   },
+   "reset_crucible":{
+      "type":"origins:action_on_block_use",
+      "entity_action":{
+         "type":"origins:change_resource",
+         "resource":"thaumaturge:aspects/reset",
+         "change":1,
+         "operation":"set"
+      },
+      "block_action":{
+         "type":"origins:and",
+         "actions":[
+            {
+               "type":"origins:execute_command",
+               "command":"playsound minecraft:block.fire.extinguish block @p ~ ~ ~ 0.50 0.80 0.50"
+            },
+            {
+               "type":"origins:execute_command",
+               "command":"playsound minecraft:ambient.underwater.enter block @p ~ ~ ~ 0.70 1.00 0.70"
+            },
+            {
+               "type":"origins:execute_command",
+               "command":"particle minecraft:cloud ~ ~ ~ 0.922 0.314 0.314 0.0 16 normal @a"
+            },
+            {
+               "type":"origins:execute_command",
+               "command":"particle minecraft:ash ~ ~ ~ 0.922 0.314 0.314 0.0 16 normal @a"
+            },
+            {
+               "type":"origins:set_block",
+               "block":"minecraft:cauldron"
+            }
+         ]
+      },
+      "block_condition":{
+         "type":"origins:and",
+         "conditions":[
+            {
+               "type":"origins:block",
+               "block":"minecraft:water_cauldron"
+            },
+            {
+               "type":"origins:offset",
+               "condition":{
+                  "type":"origins:or",
+                  "conditions":[
+                     {
+                        "type":"origins:block",
+                        "block":"minecraft:fire"
+                     },
+                     {
+                        "type":"origins:block",
+                        "block":"minecraft:lava"
+                     },
+                     {
+                        "type":"origins:block",
+                        "block":"minecraft:soul_campfire"
+                     },
+                     {
+                        "type":"origins:block",
+                        "block":"minecraft:campfire"
+                     }
+                  ]
+               },
+               "y":-1
+            }
+         ]
+      },
+      "item_condition":{
+         "type":"origins:empty"
+      },
+      "directions":[
+         "north",
+         "east",
+         "south",
+         "west",
+         "up",
+         "down"
+      ],
+      "hands":[
+         "main_hand"
+      ],
+      "usage_phases":[
+         "block"
+      ],
+      "action_result":"success",
+      "condition":{
+         "type":"origins:and",
+         "conditions":[
+            {
+               "type":"origins:sneaking"
+            },
+            {
+               "type":"origins:advancement",
+               "advancement":"origins-classes:thaumaturge/fundamentals/first_steps"
+            }
+         ]
+      }
+   }
+}

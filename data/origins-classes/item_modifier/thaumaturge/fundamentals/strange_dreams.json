@@ -1,0 +1,34 @@
+[
+    {
+      "function": "minecraft:set_book_cover",
+      "title": "Strange Dreams",
+      "author": "You",
+      "generation": 0
+    },
+    {
+      "function": "minecraft:set_written_book_pages",
+      "pages": [
+        {
+          "translate": "book.thaumaturge.strange_dreams.page_1",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false
+        },
+        {
+          "translate": "book.thaumaturge.strange_dreams.page_2",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false
+        }
+      ],
+      "mode": "replace_all"
+    },
+    {
+      "function": "minecraft:set_custom_data",
+      "tag": "{thaumaturge:strange_dreams}"
+    }
+  ]  

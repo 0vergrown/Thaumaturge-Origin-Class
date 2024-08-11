@@ -1,0 +1,17 @@
+{
+    "replace": false,
+    "values": [
+        {
+			"id": "minecraft:end_stone",
+			"required": false
+		},
+        {
+			"id": "minecraft:chorus_fruit",
+			"required": false
+		},
+        {
+			"id": "minecraft:ender_pearl",
+			"required": false
+		}
+    ]
+}

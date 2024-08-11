@@ -1,0 +1,436 @@
+[
+  {
+    "function": "minecraft:set_book_cover",
+    "title": "Thaumonomicon",
+    "author": "Azanor",
+    "generation": 0
+  },
+  {
+    "function": "minecraft:set_written_book_pages",
+    "pages": [
+      [
+        {
+          "translate": "book.thaumaturge.thaumonomicon.title_divider_top",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false
+        },
+        {
+          "translate": "book.thaumaturge.thaumonomicon.index_title",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false
+        },
+        {
+          "translate": "book.thaumaturge.thaumonomicon.title_divider_bottom",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false
+        },
+        {
+          "translate": "book.thaumaturge.thaumonomicon.index_fundamentals",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false,
+          "clickEvent": {
+            "action": "change_page",
+            "value": "2"
+          }
+        },
+        {
+          "translate": "book.thaumaturge.thaumonomicon.index_fundamentals_understanding_vis",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false,
+          "clickEvent": {
+            "action": "change_page",
+            "value": "2"
+          }
+        },
+        {
+          "translate": "book.thaumaturge.thaumonomicon.index_fundamentals_aspects",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false,
+          "clickEvent": {
+            "action": "change_page",
+            "value": "2"
+          }
+        },
+        {
+          "translate": "book.thaumaturge.thaumonomicon.index_fundamentals_thaumometer",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false,
+          "clickEvent": {
+            "action": "change_page",
+            "value": "2"
+          }
+        },
+        {
+          "translate": "book.thaumaturge.thaumonomicon.index_alchemy",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false,
+          "clickEvent": {
+            "action": "change_page",
+            "value": "7"
+          }
+        },
+        {
+          "translate": "book.thaumaturge.thaumonomicon.index_thaumic_brewing",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false,
+          "clickEvent": {
+            "action": "change_page",
+            "value": "100"
+          }
+        },
+        {
+          "translate": "book.thaumaturge.thaumonomicon.index_infusion",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false,
+          "clickEvent": {
+            "action": "change_page",
+            "value": "100"
+          }
+        }
+      ],
+      [
+        {
+          "translate": "book.thaumaturge.thaumonomicon.title_divider_top",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false
+        },
+        {
+          "translate": "book.thaumaturge.thaumonomicon.fundamentals_title",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false
+        },
+        {
+          "translate": "book.thaumaturge.thaumonomicon.title_divider_bottom",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false
+        },
+        {
+          "translate": "book.thaumaturge.thaumonomicon.fundamentals_page_1",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false
+        }
+      ],
+      {
+        "translate": "book.thaumaturge.thaumonomicon.fundamentals_page_2",
+        "bold": false,
+        "italic": false,
+        "underlined": false,
+        "strikethrough": false,
+        "obfuscated": false
+      },
+      {
+        "translate": "book.thaumaturge.thaumonomicon.fundamentals_page_3",
+        "bold": false,
+        "italic": false,
+        "underlined": false,
+        "strikethrough": false,
+        "obfuscated": false
+      },
+      [
+        {
+          "translate": "book.thaumaturge.thaumonomicon.title_divider_top",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false
+        },
+        {
+          "translate": "book.thaumaturge.thaumonomicon.fundamentals_understanding_vis_title",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false
+        },
+        {
+          "translate": "book.thaumaturge.thaumonomicon.title_divider_bottom",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false
+        },
+        {
+          "translate": "book.thaumaturge.thaumonomicon.fundamentals_understanding_vis_page_1",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false
+        }
+      ],
+      {
+        "translate": "book.thaumaturge.thaumonomicon.fundamentals_understanding_vis_page_2",
+        "bold": false,
+        "italic": false,
+        "underlined": false,
+        "strikethrough": false,
+        "obfuscated": false
+      },
+      {
+        "translate": "book.thaumaturge.thaumonomicon.fundamentals_understanding_vis_page_3",
+        "bold": false,
+        "italic": false,
+        "underlined": false,
+        "strikethrough": false,
+        "obfuscated": false
+      },
+      {
+        "translate": "book.thaumaturge.thaumonomicon.fundamentals_understanding_vis_page_4",
+        "bold": false,
+        "italic": false,
+        "underlined": false,
+        "strikethrough": false,
+        "obfuscated": false
+      },
+      {
+        "translate": "book.thaumaturge.thaumonomicon.fundamentals_understanding_vis_page_5",
+        "bold": false,
+        "italic": false,
+        "underlined": false,
+        "strikethrough": false,
+        "obfuscated": false
+      },
+      {
+        "translate": "book.thaumaturge.thaumonomicon.fundamentals_understanding_vis_page_6",
+        "bold": false,
+        "italic": false,
+        "underlined": false,
+        "strikethrough": false,
+        "obfuscated": false
+      },
+      [
+        {
+          "translate": "book.thaumaturge.thaumonomicon.title_divider_top",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false
+        },
+        {
+          "translate": "book.thaumaturge.thaumonomicon.fundamentals_aspects_title",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false
+        },
+        {
+          "translate": "book.thaumaturge.thaumonomicon.title_divider_bottom",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false
+        },
+        {
+          "translate": "book.thaumaturge.thaumonomicon.fundamentals_aspects_page_1",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false
+        }
+      ],
+      {
+        "translate": "book.thaumaturge.thaumonomicon.fundamentals_aspects_page_2",
+        "bold": false,
+        "italic": false,
+        "underlined": false,
+        "strikethrough": false,
+        "obfuscated": false
+      },
+      {
+        "translate": "book.thaumaturge.thaumonomicon.fundamentals_aspects_page_3",
+        "bold": false,
+        "italic": false,
+        "underlined": false,
+        "strikethrough": false,
+        "obfuscated": false
+      },
+      {
+        "translate": "book.thaumaturge.thaumonomicon.fundamentals_aspects_page_4",
+        "bold": false,
+        "italic": false,
+        "underlined": false,
+        "strikethrough": false,
+        "obfuscated": false
+      },
+      {
+        "translate": "book.thaumaturge.thaumonomicon.fundamentals_aspects_page_5",
+        "bold": false,
+        "italic": false,
+        "underlined": false,
+        "strikethrough": false,
+        "obfuscated": false
+      },
+      [
+        {
+          "translate": "book.thaumaturge.thaumonomicon.title_divider_top",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false
+        },
+        {
+          "translate": "book.thaumaturge.thaumonomicon.fundamentals_thaumometer_title",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false
+        },
+        {
+          "translate": "book.thaumaturge.thaumonomicon.title_divider_bottom",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false
+        },
+        {
+          "translate": "book.thaumaturge.thaumonomicon.fundamentals_thaumometer_page_1",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false
+        }
+      ],
+      {
+        "translate": "book.thaumaturge.thaumonomicon.fundamentals_thaumometer_page_2",
+        "bold": false,
+        "italic": false,
+        "underlined": false,
+        "strikethrough": false,
+        "obfuscated": false
+      },
+      {
+        "translate": "book.thaumaturge.thaumonomicon.fundamentals_thaumometer_page_3",
+        "bold": false,
+        "italic": false,
+        "underlined": false,
+        "strikethrough": false,
+        "obfuscated": false
+      },
+      [
+        {
+          "translate": "book.thaumaturge.thaumonomicon.title_divider_top",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false
+        },
+        {
+          "translate": "book.thaumaturge.thaumonomicon.alchemy_title",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false
+        },
+        {
+          "translate": "book.thaumaturge.thaumonomicon.title_divider_bottom",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false
+        },
+        {
+          "translate": "book.thaumaturge.thaumonomicon.alchemy_page_1",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false
+        }
+      ],
+      {
+        "translate": "book.thaumaturge.thaumonomicon.alchemy_page_2",
+        "bold": false,
+        "italic": false,
+        "underlined": false,
+        "strikethrough": false,
+        "obfuscated": false
+      },
+      {
+        "translate": "book.thaumaturge.thaumonomicon.alchemy_page_3",
+        "bold": false,
+        "italic": false,
+        "underlined": false,
+        "strikethrough": false,
+        "obfuscated": false
+      },
+      {
+        "translate": "book.thaumaturge.thaumonomicon.alchemy_page_4",
+        "bold": false,
+        "italic": false,
+        "underlined": false,
+        "strikethrough": false,
+        "obfuscated": false
+      }
+    ],
+    "mode": "replace_all"
+  },
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": "{thaumaturge:thaumonomicon}"
+  },
+  {
+    "function": "minecraft:set_custom_model_data",
+    "value": 685207
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:rarity": "rare"
+    }
+  }
+]

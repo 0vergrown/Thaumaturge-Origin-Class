@@ -1,0 +1,140 @@
+{
+    "type":"origins:action_on_being_used",
+    "bientity_action":{
+      "type": "origins:and",
+      "actions": [
+         {
+            "type": "origins:actor_action",
+            "action": {
+               "type": "origins:give",
+               "stack": {
+                  "item": "minecraft:potion",
+                  "amount": 1
+               },
+               "item_action": {
+                  "type": "origins:modify",
+                  "modifier": "origins-classes:thaumaturge/alchemy/alchemical_potions/potion_of_vitality"
+               },
+               "preferred_slot": "mainhand"
+            }
+         },
+         {
+            "type":"origins:target_action",
+            "action":{
+               "type": "origins:and",
+               "actions": [
+                  {
+                     "type":"origins:change_resource",
+                     "resource":"origins-classes:thaumaturge/aspects/primal/aqua",
+                     "change":0,
+                     "operation":"set"
+                  },
+                  {
+                     "type":"origins:change_resource",
+                     "resource":"origins-classes:thaumaturge/aspects/secondary/victus",
+                     "change":0,
+                     "operation":"set"
+                  },
+                  {
+                     "type":"origins:change_resource",
+                     "resource":"origins-classes:thaumaturge/aspects/tertiary/spiritus",
+                     "change":0,
+                     "operation":"set"
+                  }
+               ]
+            }
+         }
+      ]
+    },
+    "held_item_action":{
+       "type":"origins:consume",
+       "amount":1
+    },
+    "bientity_condition":{
+      "type": "origins:and",
+      "conditions": [
+          {
+            "type": "origins:target_condition",
+            "condition": {
+               "type":"origins:in_block",
+               "block_condition":{
+                  "type":"origins:and",
+                  "conditions":[
+                     {
+                        "type":"origins:block",
+                        "block":"minecraft:water_cauldron"
+                     },
+                     {
+                        "type":"origins:offset",
+                        "condition":{
+                           "type":"origins:or",
+                           "conditions":[
+                              {
+                                 "type":"origins:block",
+                                 "block":"minecraft:fire"
+                              },
+                              {
+                                 "type":"origins:block",
+                                 "block":"minecraft:lava"
+                              },
+                              {
+                                 "type":"origins:block",
+                                 "block":"minecraft:soul_campfire"
+                              },
+                              {
+                                 "type":"origins:block",
+                                 "block":"minecraft:campfire"
+                              }
+                           ]
+                        },
+                        "y":-1
+                     }
+                  ]
+               }
+            }
+          },
+          {      
+              "type":"origins:actor_condition",
+       "condition":{
+          "type":"origins:origin",
+          "origin":"origins-classes:thaumaturge",
+          "layer":"origins:class"
+       }
+          }
+      ]
+    },
+    "item_condition":{
+      "type":"origins:ingredient",
+      "ingredient":{
+         "item":"minecraft:glass_bottle"
+      }
+    },
+    "hands":[
+       "main_hand"
+    ],
+    "action_result":"success",
+    "priority":0,
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+         {
+            "type":"origins:resource",
+            "resource":"origins-classes:thaumaturge/aspects/primal/aqua",
+            "comparison":"==",
+            "compare_to":1
+         },
+         {
+            "type":"origins:resource",
+            "resource":"origins-classes:thaumaturge/aspects/secondary/victus",
+            "comparison":"==",
+            "compare_to":1
+         },
+         {
+            "type":"origins:resource",
+            "resource":"origins-classes:thaumaturge/aspects/tertiary/spiritus",
+            "comparison":"==",
+            "compare_to":1
+         }
+      ]
+    }
+}

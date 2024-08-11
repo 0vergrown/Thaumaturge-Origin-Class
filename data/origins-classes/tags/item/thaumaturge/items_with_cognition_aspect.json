@@ -1,0 +1,17 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "minecraft:book",
+            "required": false
+        },
+        {
+            "id": "minecraft:written_book",
+            "required": false
+        },
+        {
+            "id": "minecraft:lectern",
+            "required": false
+        }
+    ]
+}

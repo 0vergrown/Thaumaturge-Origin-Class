@@ -1,0 +1,327 @@
+{
+    "type": "origins:multiple",
+    "primal":{
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "hud_render": {
+            "should_render": false
+        },
+        "start_value":0,
+        "max_action":{
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:delay",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "origins-classes:thaumaturge/aspects/reset_primal",
+                        "change": 0,
+                        "operation": "set"
+                    },
+                    "ticks": 1
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "origins-classes:thaumaturge/aspects/primal/aer",
+                    "change": 0,
+                    "operation": "set"
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "origins-classes:thaumaturge/aspects/primal/aether",
+                    "change": 0,
+                    "operation": "set"
+                },
+                {    
+                    "type": "origins:change_resource",
+                    "resource": "origins-classes:thaumaturge/aspects/primal/aqua",
+                    "change": 0,
+                    "operation": "set"
+                },
+                {    
+                    "type": "origins:change_resource",
+                    "resource": "origins-classes:thaumaturge/aspects/primal/ignis",
+                    "change": 0,
+                    "operation": "set"
+                },
+                {    
+                    "type": "origins:change_resource",
+                    "resource": "origins-classes:thaumaturge/aspects/primal/ordo",
+                    "change": 0,
+                    "operation": "set"
+                },
+                {    
+                    "type": "origins:change_resource",
+                    "resource": "origins-classes:thaumaturge/aspects/primal/perditio",
+                    "change": 0,
+                    "operation": "set"
+                },
+                {    
+                    "type": "origins:change_resource",
+                    "resource": "origins-classes:thaumaturge/aspects/primal/terra",
+                    "change": 0,
+                    "operation": "set"
+                }
+            ]
+        }
+    },
+    "secondary":{
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "hud_render": {
+            "should_render": false
+        },
+        "start_value":0,
+        "max_action":{
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:delay",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "origins-classes:thaumaturge/aspects/reset_secondary",
+                        "change": 0,
+                        "operation": "set"
+                    },
+                    "ticks": 1
+                },
+                {    
+                    "type": "origins:change_resource",
+                    "resource": "origins-classes:thaumaturge/aspects/secondary/gelum",
+                    "change": 0,
+                    "operation": "set"
+                },
+                {    
+                    "type": "origins:change_resource",
+                    "resource": "origins-classes:thaumaturge/aspects/secondary/lux",
+                    "change": 0,
+                    "operation": "set"
+                },
+                {    
+                    "type": "origins:change_resource",
+                    "resource": "origins-classes:thaumaturge/aspects/secondary/metallum",
+                    "change": 0,
+                    "operation": "set"
+                },
+                {    
+                    "type": "origins:change_resource",
+                    "resource": "origins-classes:thaumaturge/aspects/secondary/motus",
+                    "change": 0,
+                    "operation": "set"
+                },
+                {    
+                    "type": "origins:change_resource",
+                    "resource": "origins-classes:thaumaturge/aspects/secondary/mortuus",
+                    "change": 0,
+                    "operation": "set"
+                },
+                {    
+                    "type": "origins:change_resource",
+                    "resource": "origins-classes:thaumaturge/aspects/secondary/permutatio",
+                    "change": 0,
+                    "operation": "set"
+                },
+                {    
+                    "type": "origins:change_resource",
+                    "resource": "origins-classes:thaumaturge/aspects/secondary/potentia",
+                    "change": 0,
+                    "operation": "set"
+                },
+                {    
+                    "type": "origins:change_resource",
+                    "resource": "origins-classes:thaumaturge/aspects/secondary/vacuos",
+                    "change": 0,
+                    "operation": "set"
+                },
+                {    
+                    "type": "origins:change_resource",
+                    "resource": "origins-classes:thaumaturge/aspects/secondary/victus",
+                    "change": 0,
+                    "operation": "set"
+                },
+                {    
+                    "type": "origins:change_resource",
+                    "resource": "origins-classes:thaumaturge/aspects/secondary/vitreus",
+                    "change": 0,
+                    "operation": "set"
+                }
+            ]
+        }
+    },
+    "tertiary":{
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "hud_render": {
+            "should_render": false
+        },
+        "start_value":0,
+        "max_action":{
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:delay",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "origins-classes:thaumaturge/aspects/reset_tertiary",
+                        "change": 0,
+                        "operation": "set"
+                    },
+                    "ticks": 1
+                },
+                {    
+                    "type": "origins:change_resource",
+                    "resource": "origins-classes:thaumaturge/aspects/tertiary/bestia",
+                    "change": 0,
+                    "operation": "set"
+                },
+                {    
+                    "type": "origins:change_resource",
+                    "resource": "origins-classes:thaumaturge/aspects/tertiary/exanimis",
+                    "change": 0,
+                    "operation": "set"
+                },
+                {    
+                    "type": "origins:change_resource",
+                    "resource": "origins-classes:thaumaturge/aspects/tertiary/herba",
+                    "change": 0,
+                    "operation": "set"
+                },
+                {    
+                    "type": "origins:change_resource",
+                    "resource": "origins-classes:thaumaturge/aspects/tertiary/instrumentum",
+                    "change": 0,
+                    "operation": "set"
+                },
+                {    
+                    "type": "origins:change_resource",
+                    "resource": "origins-classes:thaumaturge/aspects/tertiary/praecantatio",
+                    "change": 0,
+                    "operation": "set"
+                },
+                {    
+                    "type": "origins:change_resource",
+                    "resource": "origins-classes:thaumaturge/aspects/tertiary/spiritus",
+                    "change": 0,
+                    "operation": "set"
+                },
+                {    
+                    "type": "origins:change_resource",
+                    "resource": "origins-classes:thaumaturge/aspects/tertiary/tenebrae",
+                    "change": 0,
+                    "operation": "set"
+                },
+                {    
+                    "type": "origins:change_resource",
+                    "resource": "origins-classes:thaumaturge/aspects/tertiary/vinculum",
+                    "change": 0,
+                    "operation": "set"
+                },
+                {    
+                    "type": "origins:change_resource",
+                    "resource": "origins-classes:thaumaturge/aspects/tertiary/volatus",
+                    "change": 0,
+                    "operation": "set"
+                }
+            ]
+        }
+    },
+    "quaternary":{
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "hud_render": {
+            "should_render": false
+        },
+        "start_value":0,
+        "max_action":{
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:delay",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "origins-classes:thaumaturge/aspects/reset_quaternary",
+                        "change": 0,
+                        "operation": "set"
+                    },
+                    "ticks": 1
+                },
+                {    
+                    "type": "origins:change_resource",
+                    "resource": "origins-classes:thaumaturge/aspects/quaternary/alkimia",
+                    "change": 0,
+                    "operation": "set"
+                },
+                {    
+                    "type": "origins:change_resource",
+                    "resource": "origins-classes:thaumaturge/aspects/quaternary/alienis",
+                    "change": 0,
+                    "operation": "set"
+                },
+                {    
+                    "type": "origins:change_resource",
+                    "resource": "origins-classes:thaumaturge/aspects/quaternary/auram",
+                    "change": 0,
+                    "operation": "set"
+                },
+                {    
+                    "type": "origins:change_resource",
+                    "resource": "origins-classes:thaumaturge/aspects/quaternary/aversio",
+                    "change": 0,
+                    "operation": "set"
+                },
+                {    
+                    "type": "origins:change_resource",
+                    "resource": "origins-classes:thaumaturge/aspects/quaternary/cognitio",
+                    "change": 0,
+                    "operation": "set"
+                },
+                {    
+                    "type": "origins:change_resource",
+                    "resource": "origins-classes:thaumaturge/aspects/quaternary/desiderium",
+                    "change": 0,
+                    "operation": "set"
+                },
+                {    
+                    "type": "origins:change_resource",
+                    "resource": "origins-classes:thaumaturge/aspects/quaternary/fabrico",
+                    "change": 0,
+                    "operation": "set"
+                },
+                {    
+                    "type": "origins:change_resource",
+                    "resource": "origins-classes:thaumaturge/aspects/quaternary/humanus",
+                    "change": 0,
+                    "operation": "set"
+                },
+                {    
+                    "type": "origins:change_resource",
+                    "resource": "origins-classes:thaumaturge/aspects/quaternary/machina",
+                    "change": 0,
+                    "operation": "set"
+                },
+                {    
+                    "type": "origins:change_resource",
+                    "resource": "origins-classes:thaumaturge/aspects/quaternary/praemunio",
+                    "change": 0,
+                    "operation": "set"
+                },
+                {    
+                    "type": "origins:change_resource",
+                    "resource": "origins-classes:thaumaturge/aspects/quaternary/sensus",
+                    "change": 0,
+                    "operation": "set"
+                },
+                {    
+                    "type": "origins:change_resource",
+                    "resource": "origins-classes:thaumaturge/aspects/quaternary/vitium",
+                    "change": 0,
+                    "operation": "set"
+                }
+            ]
+        }
+    }
+}

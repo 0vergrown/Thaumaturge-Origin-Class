@@ -1,0 +1,17 @@
+{
+    "replace": false,
+    "values": [
+        {
+			"id": "minecraft:paper",
+			"required": false
+		},
+        {
+			"id": "minecraft:iron_ingot",
+			"required": false
+		},
+        {
+			"id": "minecraft:quartz",
+			"required": false
+		}
+    ]
+}

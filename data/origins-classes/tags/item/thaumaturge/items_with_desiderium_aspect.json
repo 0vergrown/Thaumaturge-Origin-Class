@@ -1,0 +1,17 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "minecraft:diamond",
+            "required": false
+        },
+        {
+            "id": "minecraft:emerald",
+            "required": false
+        },
+        {
+            "id": "minecraft:netherite_ingot",
+            "required": false
+        }
+    ]
+}

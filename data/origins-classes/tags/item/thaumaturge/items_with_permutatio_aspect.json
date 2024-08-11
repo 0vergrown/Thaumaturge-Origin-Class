@@ -1,0 +1,21 @@
+{
+    "replace": false,
+    "values": [
+        {
+			"id": "minecraft:ender_pearl",
+			"required": false
+		},
+        {
+			"id": "minecraft:redstone",
+			"required": false
+		},
+		{
+			"id": "#minecraft:lapis_ores",
+			"required": false
+		},
+        {
+			"id": "minecraft:lapis_lazuli",
+			"required": false
+		}
+    ]
+}

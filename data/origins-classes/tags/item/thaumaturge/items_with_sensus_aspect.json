@@ -1,0 +1,17 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "minecraft:book_and_quill",
+            "required": false
+        },
+        {
+            "id": "minecraft:painting",
+            "required": false
+        },
+        {
+            "id": "minecraft:spyglass",
+            "required": false
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "minecraft:shield",
+            "required": false
+        },
+        {
+            "id": "minecraft:iron_door",
+            "required": false
+        },
+        {
+            "id": "minecraft:iron_chestplate",
+            "required": false
+        }
+    ]
+}

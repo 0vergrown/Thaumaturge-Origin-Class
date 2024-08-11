@@ -1,0 +1,42 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:potion",
+        "count": 1,
+        "components": {
+          "minecraft:potion_contents": {
+            "potion": "minecraft:awkward",
+            "custom_color": 345856
+          }
+        }
+      },
+      "title": {
+        "translate": "advancements.origins-classes.thaumaturge.alchemy_root.name",
+        "color": "dark_purple",
+        "bold": false,
+        "italic": false,
+        "underlined": false,
+        "strikethrough": false,
+        "obfuscated": false
+      },
+      "description": {
+        "translate": "advancements.origins-classes.thaumaturge.alchemy_root.description",
+        "color": "gold",
+        "bold": false,
+        "italic": false,
+        "underlined": false,
+        "strikethrough": false,
+        "obfuscated": false
+      },
+      "background": "minecraft:textures/gui/advancements/backgrounds/alchemy.png",
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "criteria": {
+      "craft_first_alchemy_potion": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }  
