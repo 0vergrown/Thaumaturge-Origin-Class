@@ -7,12 +7,12 @@
 **This Pack Adds:**
 - Custom Origin Class
 - Custom Advancements
-- Custom Items
 - Custom Magic System
+- Custom Items
 - Custom Armor
 
 **Class Detail:**
 
 **Icon**: Arcane Workbench\
 **Impact**: 🔴🔴🔴\
-**Description**:
+**Description**: A conduit of mystic forces, weaving the world's essence into potent brews, enchantments, and arcane incantations.

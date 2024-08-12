@@ -40,29 +40,29 @@
                         "block":"minecraft:water_cauldron"
                      },
                      {
-                        "type": "origins:spawn_entity",
-                        "entity_type": "minecraft:chicken",
-                        "tag":"{Silent:1b,Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,CanPickUpLoot:0b}",
-                        "entity_action": {
-                           "type": "origins:and",
-                           "actions": [
+                        "type":"origins:spawn_entity",
+                        "entity_type":"minecraft:chicken",
+                        "tag":"{Silent:1b,Invulnerable:1b,DeathLootTable:\"minecraft:empty\",PersistenceRequired:1b,NoAI:1b,CanPickUpLoot:0b,IsChickenJockey:0b,EggLayTime:99999,Tags:[\"thaumaturge_crucible\"],attributes:[{id:\"minecraft:generic.burning_time\",base:0}]}",
+                        "entity_action":{
+                           "type":"origins:and",
+                           "actions":[
                               {
-                                 "type": "origins:grant_power",
-                                 "power": "origins-classes:thaumaturge/alchemy/crucible",
-                                 "source": "origins-classes:thaumaturge/alchemy/crucible"
+                                 "type":"origins:grant_power",
+                                 "power":"origins-classes:thaumaturge/alchemy/crucible",
+                                 "source":"origins-classes:thaumaturge/alchemy/crucible"
                               },
                               {
-                                 "type": "origins:grant_power",
-                                 "power": "origins-classes:thaumaturge/alchemy/alchemical_potions/potion_of_vitality",
-                                 "source": "origins-classes:thaumaturge/alchemy/alchemical_potions/potion_of_vitality"
+                                 "type":"origins:grant_power",
+                                 "power":"origins-classes:thaumaturge/alchemy/alchemical_potions/potion_of_vitality",
+                                 "source":"origins-classes:thaumaturge/alchemy/alchemical_potions/potion_of_vitality"
                               },
                               {
-                                 "type": "origins:execute_command",
-                                 "command": "attribute @s additionalentityattributes:generic.hitbox_height base set 1.20"
+                                 "type":"origins:execute_command",
+                                 "command":"attribute @s additionalentityattributes:generic.hitbox_height base set 1.20"
                               },
                               {
-                                 "type": "origins:execute_command",
-                                 "command": "attribute @s additionalentityattributes:generic.hitbox_width base set 2.50"
+                                 "type":"origins:execute_command",
+                                 "command":"attribute @s additionalentityattributes:generic.hitbox_width base set 2.50"
                               }
                            ]
                         }
@@ -134,15 +134,25 @@
    },
    "reset_crucible":{
       "type":"origins:action_on_block_use",
-      "entity_action":{
-         "type":"origins:change_resource",
-         "resource":"thaumaturge:aspects/reset",
-         "change":1,
-         "operation":"set"
-      },
       "block_action":{
          "type":"origins:and",
          "actions":[
+            {
+               "type":"origins:execute_command",
+               "command":"resource set @n[type=minecraft:chicken,tag=thaumaturge_crucible,limit=1] origins-classes:thaumaturge/aspects/reset_primal 1"
+            },
+            {
+               "type":"origins:execute_command",
+               "command":"resource set @n[type=minecraft:chicken,tag=thaumaturge_crucible,limit=1] origins-classes:thaumaturge/aspects/reset_secondary 1"
+            },
+            {
+               "type":"origins:execute_command",
+               "command":"resource set @n[type=minecraft:chicken,tag=thaumaturge_crucible,limit=1] origins-classes:thaumaturge/aspects/reset_tertiary 1"
+            },
+            {
+               "type":"origins:execute_command",
+               "command":"resource set @n[type=minecraft:chicken,tag=thaumaturge_crucible,limit=1] origins-classes:thaumaturge/aspects/reset_quaternary 1"
+            },
             {
                "type":"origins:execute_command",
                "command":"playsound minecraft:block.fire.extinguish block @p ~ ~ ~ 0.50 0.80 0.50"
@@ -229,5 +239,37 @@
             }
          ]
       }
+   },
+   "kill_crucible":{
+      "type":"origins:action_on_block_break",
+      "block_action":{
+         "type":"origins:execute_command",
+         "command":"kill @n[type=minecraft:chicken,tag=thaumaturge_crucible,limit=1]"
+      },
+      "block_condition":{
+         "type":"origins:and",
+         "conditions":[
+            {
+               "type":"origins:command",
+               "command":"execute align xyz if entity @e[dy=0,dx=0,dz=0,type=minecraft:chicken,tag=thaumaturge_crucible]",
+               "comparison":">=",
+               "compare_to":1
+            },
+            {
+               "type":"origins:or",
+               "conditions":[
+                  {
+                     "type":"origins:block",
+                     "block":"minecraft:water_cauldron"
+                  },
+                  {
+                     "type":"origins:block",
+                     "block":"minecraft:cauldron"
+                  }
+               ]
+            }
+         ]
+      },
+      "only_when_harvested": false
    }
 }

@@ -394,6 +394,9 @@
          "type":"origins:consume",
          "amount":1
       },
+      "usage_phases":[
+         "item"
+      ],
       "action_result":"success",
       "condition":{
          "type":"origins:advancement",
