@@ -35,6 +35,20 @@
                "type":"origins:and",
                "actions":[
                   {
+                     "type":"origins:chance",
+                     "action":{
+                        "type":"origins:block_action_at",
+                        "block_action":{
+                           "type":"origins:modify_block_state",
+                           "property":"level",
+                           "operation":"add",
+                           "change":-1,
+                           "cycle":false
+                        }
+                     },
+                     "chance":0.50
+                  },
+                  {
                      "type":"origins:change_resource",
                      "resource":"origins-classes:thaumaturge/aspects/primal/aqua_resource",
                      "change":0,
