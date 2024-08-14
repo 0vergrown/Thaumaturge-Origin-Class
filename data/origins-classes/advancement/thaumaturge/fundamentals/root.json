@@ -22,7 +22,6 @@
      },
      "title": {
        "translate": "advancements.origins-classes.thaumaturge.root.name",
-       "color": "white",
        "bold": false,
        "italic": false,
        "underlined": false,
@@ -31,7 +30,6 @@
      },
      "description": {
        "translate": "advancements.origins-classes.thaumaturge.root.description",
-       "color": "green",
        "bold": false,
        "italic": false,
        "underlined": false,
@@ -39,7 +37,7 @@
        "obfuscated": false
      },
      "background": "minecraft:textures/block/calibrated_sculk_sensor_top.png",
-     "frame": "challenge",
+     "frame": "task",
      "show_toast": true,
      "announce_to_chat": true,
      "hidden": false

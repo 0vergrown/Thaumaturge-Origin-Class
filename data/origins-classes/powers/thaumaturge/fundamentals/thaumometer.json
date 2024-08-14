@@ -40,12 +40,51 @@
           "advancement":"origins-classes:thaumaturge/fundamentals/first_steps"
        }
     },
+    "aer_aspect_detection":{
+      "type":"origins:tooltip",
+      "item_condition":{
+         "type":"origins:ingredient",
+         "ingredient":{
+            "tag":"origins-classes:thaumaturge/aspects/primal/items_with_aer_aspect"
+         }
+      },
+      "text":{
+         "type":"translatable",
+         "translate":"item.tooltip.thaumometer.aer_aspect",
+         "color":"yellow"
+      },
+      "order":0,
+      "condition":{
+         "type":"origins:inventory",
+         "inventory_types":[
+            "inventory"
+         ],
+         "process_mode":"items",
+         "item_condition":{
+            "type":"origins:and",
+            "conditions":[
+               {
+                  "type":"origins:ingredient",
+                  "ingredient":{
+                     "item":"minecraft:clock"
+                  }
+               },
+               {
+                  "type":"origins:custom_data",
+                  "nbt":"{thaumaturge:thaumometer}"
+               }
+            ]
+         },
+         "comparison":"!=",
+         "compare_to":0
+      }
+   },
     "terra_aspect_detection":{
        "type":"origins:tooltip",
        "item_condition":{
           "type":"origins:ingredient",
           "ingredient":{
-             "tag":"origins-classes:thaumaturge/items_with_terra_aspect"
+             "tag":"origins-classes:thaumaturge/aspects/primal/items_with_terra_aspect"
           }
        },
        "text":{
@@ -79,12 +118,129 @@
           "compare_to":0
        }
     },
+    "ignis_aspect_detection":{
+      "type":"origins:tooltip",
+      "item_condition":{
+         "type":"origins:ingredient",
+         "ingredient":{
+            "tag":"origins-classes:thaumaturge/aspects/primal/items_with_ignis_aspect"
+         }
+      },
+      "text":{
+         "type":"translatable",
+         "translate":"item.tooltip.thaumometer.ignis_aspect",
+         "color":"gold"
+      },
+      "order":0,
+      "condition":{
+         "type":"origins:inventory",
+         "inventory_types":[
+            "inventory"
+         ],
+         "process_mode":"items",
+         "item_condition":{
+            "type":"origins:and",
+            "conditions":[
+               {
+                  "type":"origins:ingredient",
+                  "ingredient":{
+                     "item":"minecraft:clock"
+                  }
+               },
+               {
+                  "type":"origins:custom_data",
+                  "nbt":"{thaumaturge:thaumometer}"
+               }
+            ]
+         },
+         "comparison":"!=",
+         "compare_to":0
+      }
+   },
+   "aqua_aspect_detection":{
+      "type":"origins:tooltip",
+      "item_condition":{
+         "type":"origins:ingredient",
+         "ingredient":{
+            "tag":"origins-classes:thaumaturge/aspects/primal/items_with_aqua_aspect"
+         }
+      },
+      "text":{
+         "type":"translatable",
+         "translate":"item.tooltip.thaumometer.aqua_aspect",
+         "color":"aqua"
+      },
+      "order":0,
+      "condition":{
+         "type":"origins:inventory",
+         "inventory_types":[
+            "inventory"
+         ],
+         "process_mode":"items",
+         "item_condition":{
+            "type":"origins:and",
+            "conditions":[
+               {
+                  "type":"origins:ingredient",
+                  "ingredient":{
+                     "item":"minecraft:clock"
+                  }
+               },
+               {
+                  "type":"origins:custom_data",
+                  "nbt":"{thaumaturge:thaumometer}"
+               }
+            ]
+         },
+         "comparison":"!=",
+         "compare_to":0
+      }
+   },
+   "ordo_aspect_detection":{
+      "type":"origins:tooltip",
+      "item_condition":{
+         "type":"origins:ingredient",
+         "ingredient":{
+            "tag":"origins-classes:thaumaturge/aspects/primal/items_with_ordo_aspect"
+         }
+      },
+      "text":{
+         "type":"translatable",
+         "translate":"item.tooltip.thaumometer.ordo_aspect",
+         "color":"white"
+      },
+      "order":0,
+      "condition":{
+         "type":"origins:inventory",
+         "inventory_types":[
+            "inventory"
+         ],
+         "process_mode":"items",
+         "item_condition":{
+            "type":"origins:and",
+            "conditions":[
+               {
+                  "type":"origins:ingredient",
+                  "ingredient":{
+                     "item":"minecraft:clock"
+                  }
+               },
+               {
+                  "type":"origins:custom_data",
+                  "nbt":"{thaumaturge:thaumometer}"
+               }
+            ]
+         },
+         "comparison":"!=",
+         "compare_to":0
+      }
+   },
     "perditio_aspect_detection":{
         "type":"origins:tooltip",
         "item_condition":{
            "type":"origins:ingredient",
            "ingredient":{
-              "tag":"origins-classes:thaumaturge/items_with_perditio_aspect"
+              "tag":"origins-classes:thaumaturge/aspects/primal/items_with_perditio_aspect"
            }
         },
         "text":{

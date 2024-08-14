@@ -20,6 +20,26 @@
         {
 			"id": "minecraft:torch",
 			"required": false
+		},
+		{
+			"id": "minecraft:redstone_lamp",
+			"required": false
+		},
+		{
+			"id": "minecraft:daylight_detector",
+			"required": false
+		},
+		{
+			"id": "minecraft:end_rod",
+			"required": false
+		},
+		{
+			"id": "minecraft:prismarine_crystals",
+			"required": false
+		},
+		{
+			"id": "minecraft:spectral_arrow",
+			"required": false
 		}
     ]
 }

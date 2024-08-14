@@ -53,16 +53,21 @@
                               },
                               {
                                  "type":"origins:grant_power",
-                                 "power":"origins-classes:thaumaturge/alchemy/alchemical_potions/potion_of_vitality",
-                                 "source":"origins-classes:thaumaturge/alchemy/alchemical_potions/potion_of_vitality"
+                                 "power":"origins-classes:thaumaturge/alchemy/alchemical_potions/recipe/potion_of_vitality",
+                                 "source":"origins-classes:thaumaturge/alchemy/alchemical_potions/recipe/potion_of_vitality"
+                              },
+                              {
+                                 "type":"origins:grant_power",
+                                 "power":"origins-classes:thaumaturge/alchemy/alchemical_potions/recipe/potion_of_frostbite",
+                                 "source":"origins-classes:thaumaturge/alchemy/alchemical_potions/recipe/potion_of_frostbite"
                               },
                               {
                                  "type":"origins:execute_command",
-                                 "command":"attribute @s additionalentityattributes:generic.hitbox_height base set 1.20"
+                                 "command":"attribute @s additionalentityattributes:generic.hitbox_height base set 0.73"
                               },
                               {
                                  "type":"origins:execute_command",
-                                 "command":"attribute @s additionalentityattributes:generic.hitbox_width base set 2.50"
+                                 "command":"attribute @s additionalentityattributes:generic.hitbox_width base set 1.86"
                               }
                            ]
                         }

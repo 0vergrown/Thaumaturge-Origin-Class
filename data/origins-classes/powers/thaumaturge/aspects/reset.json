@@ -27,12 +27,6 @@
                     "change": 0,
                     "operation": "set"
                 },
-                {
-                    "type": "origins:change_resource",
-                    "resource": "origins-classes:thaumaturge/aspects/amethyst_shard",
-                    "change": 0,
-                    "operation": "set"
-                },
                 {    
                     "type": "origins:change_resource",
                     "resource": "origins-classes:thaumaturge/aspects/primal/aqua_resource",

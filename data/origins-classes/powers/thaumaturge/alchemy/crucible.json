@@ -5,6 +5,9 @@
       "render_armor":false,
       "render_outline":false
    },
+   "prevent_entity_collision":{
+      "type":"origins:prevent_entity_collision"
+   },
    "particle_effects":{
       "type":"apoli:action_over_time",
       "entity_action":{
@@ -68,11 +71,6 @@
                "type":"origins:grant_power",
                "power":"origins-classes:thaumaturge/aspects/reset",
                "source":"origins-classes:thaumaturge/aspects/reset"
-            },
-            {
-               "type":"origins:grant_power",
-               "power":"origins-classes:thaumaturge/aspects/amethyst_shard",
-               "source":"origins-classes:thaumaturge/aspects/amethyst_shard"
             },
             {
                "type":"origins:grant_power",

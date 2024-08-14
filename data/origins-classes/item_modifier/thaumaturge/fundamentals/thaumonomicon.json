@@ -308,6 +308,22 @@
         "strikethrough": false,
         "obfuscated": false
       },
+      {
+        "translate": "book.thaumaturge.thaumonomicon.fundamentals_aspects_page_6",
+        "bold": false,
+        "italic": false,
+        "underlined": false,
+        "strikethrough": false,
+        "obfuscated": false
+      },
+      {
+        "translate": "book.thaumaturge.thaumonomicon.fundamentals_aspects_page_7",
+        "bold": false,
+        "italic": false,
+        "underlined": false,
+        "strikethrough": false,
+        "obfuscated": false
+      },
       [
         {
           "translate": "book.thaumaturge.thaumonomicon.title_divider_top",

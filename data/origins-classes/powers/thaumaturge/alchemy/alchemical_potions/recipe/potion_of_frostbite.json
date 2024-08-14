@@ -16,9 +16,8 @@
                      },
                      "item_action":{
                         "type":"origins:modify",
-                        "modifier":"origins-classes:thaumaturge/alchemy/alchemical_potions/potion_of_vitality"
-                     },
-                     "preferred_slot":"mainhand"
+                        "modifier":"origins-classes:thaumaturge/alchemy/alchemical_potions/potion_of_frostbite"
+                     }
                   },
                   {
                      "type":"origins:play_sound",
@@ -35,34 +34,66 @@
                "type":"origins:and",
                "actions":[
                   {
-                     "type":"origins:chance",
-                     "action":{
-                        "type":"origins:block_action_at",
-                        "block_action":{
-                           "type":"origins:modify_block_state",
-                           "property":"level",
-                           "operation":"add",
-                           "change":-1,
-                           "cycle":false
-                        }
+                     "type": "origins:if_else",
+                     "condition": {
+                         "type": "origins:in_block",
+                         "block_condition": {
+                           "type": "origins:and",
+                           "conditions": [
+                               {
+                                 "type": "origins:block",
+                                 "block": "minecraft:water_cauldron"
+                               },
+                               {      
+                                   "type": "origins:block_state",
+                                   "property":"level",
+                                   "comparison":"==",
+                                   "compare_to": 1
+                               }
+                           ]
+                         }
                      },
-                     "chance":0.50
+                     "if_action": {
+                        "type":"origins:chance",
+                        "action":{
+                           "type":"origins:block_action_at",
+                           "block_action":{
+                              "type": "origins:set_block",
+                              "block": "minecraft:cauldron"
+                           }
+                        },
+                        "chance":0.50
+                     },
+                     "else_action": {
+                        "type":"origins:chance",
+                        "action":{
+                           "type":"origins:block_action_at",
+                           "block_action":{
+                              "type":"origins:modify_block_state",
+                              "property":"level",
+                              "operation":"add",
+                              "change":-1,
+                              "cycle":false
+                           }
+                        },
+                        "chance":0.50
+                     }
                   },
                   {
                      "type":"origins:change_resource",
-                     "resource":"origins-classes:thaumaturge/aspects/primal/aqua_resource",
+                     "resource":"origins-classes:thaumaturge/aspects/primal/ignis_resource",
                      "change":0,
                      "operation":"set"
                   },
                   {
                      "type":"origins:change_resource",
-                     "resource":"origins-classes:thaumaturge/aspects/secondary/victus_resource",
+                     "resource":"origins-classes:thaumaturge/aspects/secondary/gelum_resource",
                      "change":0,
                      "operation":"set"
                   },
                   {
                      "type":"origins:change_resource",
-                     "resource":"origins-classes:thaumaturge/aspects/tertiary/spiritus_resource",
+                     "resource":"origins-classes:thaumaturge/aspects/secondary/mortuus_resource",
                      "change":0,
                      "operation":"set"
                   },
@@ -156,19 +187,19 @@
       "conditions":[
          {
             "type":"origins:resource",
-            "resource":"origins-classes:thaumaturge/aspects/primal/aqua_resource",
+            "resource":"origins-classes:thaumaturge/aspects/primal/ignis_resource",
             "comparison":"==",
             "compare_to":1
          },
          {
             "type":"origins:resource",
-            "resource":"origins-classes:thaumaturge/aspects/secondary/victus_resource",
+            "resource":"origins-classes:thaumaturge/aspects/secondary/gelum_resource",
             "comparison":"==",
             "compare_to":1
          },
          {
             "type":"origins:resource",
-            "resource":"origins-classes:thaumaturge/aspects/tertiary/spiritus_resource",
+            "resource":"origins-classes:thaumaturge/aspects/secondary/mortuus_resource",
             "comparison":"==",
             "compare_to":1
          }

@@ -120,7 +120,7 @@
        "item_condition":{
           "type":"origins:ingredient",
           "ingredient":{
-             "tag":"origins-classes:thaumaturge/items_with_vitreus_aspect"
+             "tag":"origins-classes:thaumaturge/aspects/secondary/items_with_vitreus_aspect"
           }
        },
        "hands":[

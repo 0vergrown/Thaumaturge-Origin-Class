@@ -120,7 +120,7 @@
        "item_condition":{
           "type":"origins:ingredient",
           "ingredient":{
-             "tag":"origins-classes:thaumaturge/items_with_exanimis_aspect"
+             "tag":"origins-classes:thaumaturge/aspects/tertiary/items_with_exanimis_aspect"
           }
        },
        "hands":[
