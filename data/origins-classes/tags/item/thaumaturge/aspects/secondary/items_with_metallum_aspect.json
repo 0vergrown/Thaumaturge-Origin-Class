@@ -102,10 +102,6 @@
             "required": false
         },
         {
-            "id": "#minecraft:iron_ores",
-            "required": false
-        },
-        {
             "id": "minecraft:iron_trapdoor",
             "required": false
         },
