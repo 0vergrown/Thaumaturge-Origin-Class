@@ -12,7 +12,7 @@
       "origins-classes:thaumaturge/alchemy/alchemical_potions/user_action/potion_of_frostbite"
    ],
    "icon":{
-      "item":"minecraft:player_head",
+      "id":"minecraft:player_head",
       "components":{
          "minecraft:profile":{
             "id":[

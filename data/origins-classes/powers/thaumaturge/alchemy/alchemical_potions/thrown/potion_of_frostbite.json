@@ -10,7 +10,7 @@
           "radius":1,
           "shape":"cube",
           "bientity_action":{
-             "type":"origins:add_to_set",
+             "type":"origins:add_to_entity_set",
              "set":"origins-classes:thaumaturge/alchemy/alchemical_potions/thrown/potion_of_frostbite_actor_set"
           },
           "bientity_condition":{
@@ -23,17 +23,17 @@
           },
           "include_actor":false,
           "condition":{
-             "type":"origins:set_size",
+             "type":"origins:entity_set_size",
              "set":"origins-classes:thaumaturge/alchemy/alchemical_potions/thrown/potion_of_frostbite_actor_set",
              "comparison":"==",
              "compare_to":0
           }
        },
        "entity_action_removed":{
-          "type":"origins:action_on_set",
+          "type":"origins:action_on_entity_set",
           "set":"origins-classes:thaumaturge/alchemy/alchemical_potions/thrown/potion_of_frostbite_actor_set",
           "bientity_action":{
-             "type":"origins:remove_from_set",
+             "type":"origins:remove_from_entity_set",
              "set":"origins-classes:thaumaturge/alchemy/alchemical_potions/thrown/potion_of_frostbite_actor_set"
           },
           "limit":1,
@@ -51,8 +51,6 @@
                 "y":-0.005,
                 "z":0.05,
                 "space":"local_horizontal",
-                "client":true,
-                "server":true,
                 "set":false
              },
              {
@@ -165,7 +163,7 @@
                    "type":"origins:and",
                    "conditions":[
                       {
-                         "type":"origins:in_set",
+                         "type":"origins:in_entity_set",
                          "set":"origins-classes:thaumaturge/alchemy/alchemical_potions/thrown/potion_of_frostbite_actor_set",
                          "inverted":true
                       },
@@ -189,8 +187,6 @@
                 "y":0.00,
                 "z":0.875,
                 "space":"local",
-                "client":true,
-                "server":true,
                 "set":true
              },
              {
@@ -317,7 +313,7 @@
                    "type":"origins:and",
                    "conditions":[
                       {
-                         "type":"origins:in_set",
+                         "type":"origins:in_entity_set",
                          "set":"origins-classes:thaumaturge/alchemy/alchemical_potions/thrown/potion_of_frostbite_actor_set",
                          "inverted":true
                       },

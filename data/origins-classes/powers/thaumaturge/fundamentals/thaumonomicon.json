@@ -120,8 +120,8 @@
             ]
          },
          "stack":{
-            "item":"minecraft:written_book",
-            "amount":1
+            "id":"minecraft:written_book",
+            "count":1
          },
          "merge_nbt":false
       },

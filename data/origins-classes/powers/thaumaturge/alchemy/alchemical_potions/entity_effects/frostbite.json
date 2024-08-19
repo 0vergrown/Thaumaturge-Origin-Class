@@ -105,7 +105,7 @@
    },
    "overlay":{
       "type":"origins:overlay",
-      "texture":"minecraft:textures/block/ice.png",
+      "texture":"minecraft:ice",
       "strength":0.67,
       "red":1.00,
       "green":1.00,
@@ -125,8 +125,8 @@
    "disable_jump":{
       "type":"origins:modify_jump",
       "modifier":{
-         "operation":"multiply_total",
-         "value":-1
+         "operation":"multiply_total_multiplicative",
+         "amount":-1
       }
    },
    "disable_all_movement":{
@@ -137,23 +137,23 @@
       "tick_rate":10,
       "effects":[
          {
-            "effect":"minecraft:jump_boost",
+            "id":"minecraft:jump_boost",
             "amplifier":199,
-            "is_ambient":true,
+            "ambient":true,
             "show_particles":false,
             "show_icon":true
          },
          {
-            "effect":"minecraft:slowness",
+            "id":"minecraft:slowness",
             "amplifier":199,
-            "is_ambient":true,
+            "ambient":true,
             "show_particles":false,
             "show_icon":true
          },
          {
-            "effect":"minecraft:resistance",
+            "id":"minecraft:resistance",
             "amplifier":199,
-            "is_ambient":true,
+            "ambient":true,
             "show_particles":false,
             "show_icon":true
          }
@@ -166,7 +166,7 @@
       "type":"origins:modify_damage_dealt",
       "modifier":{
          "operation":"multiply_total_multiplicative",
-         "value":-1
+         "amount":-1
       }
    },
    "disable_item_use":{

@@ -21,8 +21,8 @@
             {
                "type":"origins:give",
                "stack":{
-                  "item":"minecraft:written_book",
-                  "amount":1
+                  "id":"minecraft:written_book",
+                  "count":1
                },
                "item_action":{
                   "type":"origins:modify",

@@ -11,8 +11,8 @@
                   {
                      "type":"origins:give",
                      "stack":{
-                        "item":"minecraft:potion",
-                        "amount":1
+                        "id":"minecraft:potion",
+                        "count":1
                      },
                      "item_action":{
                         "type":"origins:modify",
@@ -55,7 +55,7 @@
                      },
                      "if_action": {
                         "type":"origins:chance",
-                        "action":{
+                        "success_action":{
                            "type":"origins:block_action_at",
                            "block_action":{
                               "type": "origins:set_block",
@@ -66,7 +66,7 @@
                      },
                      "else_action": {
                         "type":"origins:chance",
-                        "action":{
+                        "success_action":{
                            "type":"origins:block_action_at",
                            "block_action":{
                               "type":"origins:modify_block_state",

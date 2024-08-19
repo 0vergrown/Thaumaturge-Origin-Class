@@ -23,8 +23,8 @@
             {
                "type":"origins:give",
                "stack":{
-                  "item":"minecraft:glass_bottle",
-                  "amount":1
+                  "id":"minecraft:glass_bottle",
+                  "count":1
                }
             },
             {

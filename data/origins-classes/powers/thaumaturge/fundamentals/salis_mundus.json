@@ -56,8 +56,8 @@
       "entity_action":{
          "type":"origins:give",
          "stack":{
-            "item":"minecraft:bowl",
-            "amount":1
+            "id":"minecraft:bowl",
+            "count":1
          }
       },
       "condition":{
