@@ -8,7 +8,7 @@
           }
        },
        "title":{
-          "translate":"advancements.origins-classes.thaumaturge.discovering_auramancy.name",
+          "translate":"advancements.origins-classes.thaumaturge.discovering_auromancy.name",
           "color":"dark_purple",
           "bold":false,
           "italic":false,
@@ -17,7 +17,7 @@
           "obfuscated":false
        },
        "description":{
-          "translate":"advancements.origins-classes.thaumaturge.discovering_auramancy.description",
+          "translate":"advancements.origins-classes.thaumaturge.discovering_auromancy.description",
           "color":"gold",
           "bold":false,
           "italic":false,

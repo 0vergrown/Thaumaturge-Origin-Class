@@ -127,6 +127,12 @@
           "main_hand"
        ],
        "action_result":"success",
-       "priority":0
+       "priority":0,
+       "condition":{
+         "type":"origins:resource",
+         "resource":"origins-classes:thaumaturge/aspects/tertiary/spiritus_resource",
+         "comparison":"==",
+         "compare_to":0
+      }
     }
 }
