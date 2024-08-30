@@ -93,6 +93,12 @@
                   },
                   {
                      "type":"origins:change_resource",
+                     "resource":"origins-classes:thaumaturge/aspects/secondary/vitreus_resource",
+                     "change":0,
+                     "operation":"set"
+                  },
+                  {
+                     "type":"origins:change_resource",
                      "resource":"origins-classes:thaumaturge/aspects/tertiary/spiritus_resource",
                      "change":0,
                      "operation":"set"

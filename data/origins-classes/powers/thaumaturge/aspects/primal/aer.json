@@ -30,10 +30,10 @@
                   "force":false,
                   "spread":{
                      "x":0.1,
-                     "y":0.1,
+                     "y":0.0,
                      "z":0.1
                   },
-                  "offset_y":0.5
+                  "offset_y":0.4
                },
                {
                   "type":"origins:play_sound",
