@@ -1,0 +1,67 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:player_head",
+      "count": 1,
+      "components": {
+        "minecraft:profile": {
+          "id": [
+            -1405723088,
+            -499757955,
+            -1484193331,
+            -935244173
+          ],
+          "properties": [
+            {
+              "name": "textures",
+              "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTNmZDhlODdkZDkwMzJjZDcyZjZmYTJkNmI0NWU1M2YwODI3YjUyNzI2M2RhNjQ4ZTBlZTU1NTJjZGFkNmNiYyJ9fX0="
+            }
+          ]
+        }
+      }
+    },
+    "title": {
+      "translate": "advancements.origins-classes.thaumaturge.auromancy_root.name",
+      "color": "dark_purple",
+      "bold": false,
+      "italic": false,
+      "underlined": false,
+      "strikethrough": false,
+      "obfuscated": false
+    },
+    "description": {
+      "translate": "advancements.origins-classes.thaumaturge.auromancy_root.description",
+      "color": "gold",
+      "bold": false,
+      "italic": false,
+      "underlined": false,
+      "strikethrough": false,
+      "obfuscated": false
+    },
+    "background": "minecraft:textures/block/calibrated_sculk_sensor_top.png",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "thaumic_gauntlet_in_inventory": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:rabbit_foot",
+            "count": 1,
+            "components": {
+              "minecraft:custom_model_data": 193337
+            },
+            "predicates": {
+              "minecraft:custom_data": "{thaumaturge:basic_casting_gauntlet}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "sends_telemetry_event": true
+}

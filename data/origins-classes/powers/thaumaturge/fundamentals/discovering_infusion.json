@@ -60,6 +60,11 @@
                                           "source":"origins-classes:thaumaturge/fundamentals/discovering_infusion_armor_stand_effects"
                                        },
                                        {
+                                          "type":"origins:grant_power",
+                                          "power":"origins-classes:thaumaturge/materials/thaumic_leather/auram_bath",
+                                          "source":"origins-classes:thaumaturge/materials/thaumic_leather/auram_bath"
+                                       },
+                                       {
                                           "type":"origins:execute_command",
                                           "command":"execute align xyz run summon minecraft:item_display ~0.5 ~2.5 ~0.5 {item:{id:\"minecraft:gilded_blackstone\",Count:1},item_display:\"none\",Tags:[\"thaumaturge_infusion_core\"],components:{\"minecraft:custom_data\":{thaumaturge:thaumaturge_infusion_core}},transformation:[0.2601f,-0.7987f,0.5426f,0.0000f,0.5750f,0.5795f,0.5775f,0.0000f,-0.7757f,0.1618f,0.6100f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f]}"
                                        }

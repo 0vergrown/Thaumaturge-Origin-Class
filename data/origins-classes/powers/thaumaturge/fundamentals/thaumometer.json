@@ -19,7 +19,7 @@
              }
           },
           "result":{
-             "id":"minecraft:clock",
+             "id":"minecraft:clay_ball",
              "count":1
           }
        },
@@ -66,7 +66,7 @@
                {
                   "type":"origins:ingredient",
                   "ingredient":{
-                     "item":"minecraft:clock"
+                     "item":"minecraft:clay_ball"
                   }
                },
                {
@@ -82,10 +82,31 @@
     "terra_aspect_detection":{
        "type":"origins:tooltip",
        "item_condition":{
-          "type":"origins:ingredient",
-          "ingredient":{
-             "tag":"origins-classes:thaumaturge/aspects/primal/items_with_terra_aspect"
-          }
+         "type": "origins:and",
+         "conditions": [
+            {
+               "type":"origins:ingredient",
+               "ingredient":{
+                  "tag":"origins-classes:thaumaturge/aspects/primal/items_with_terra_aspect"
+               }
+            },
+            {
+               "type":"origins:and",
+               "conditions":[
+                  {
+                     "type":"origins:ingredient",
+                     "ingredient":{
+                        "item":"minecraft:clay_ball"
+                     }
+                  },
+                  {
+                     "type":"origins:custom_data",
+                     "nbt":"{thaumaturge:thaumometer}"
+                  }
+               ],
+               "inverted": true
+            }
+         ]
        },
        "text":{
           "type":"translatable",
@@ -105,7 +126,7 @@
                 {
                    "type":"origins:ingredient",
                    "ingredient":{
-                      "item":"minecraft:clock"
+                      "item":"minecraft:clay_ball"
                    }
                 },
                 {
@@ -144,7 +165,7 @@
                {
                   "type":"origins:ingredient",
                   "ingredient":{
-                     "item":"minecraft:clock"
+                     "item":"minecraft:clay_ball"
                   }
                },
                {
@@ -160,10 +181,31 @@
    "aqua_aspect_detection":{
       "type":"origins:tooltip",
       "item_condition":{
-         "type":"origins:ingredient",
-         "ingredient":{
-            "tag":"origins-classes:thaumaturge/aspects/primal/items_with_aqua_aspect"
-         }
+         "type": "origins:and",
+         "conditions": [
+            {
+               "type":"origins:ingredient",
+               "ingredient":{
+                  "tag":"origins-classes:thaumaturge/aspects/primal/items_with_aqua_aspect"
+               }
+            },
+            {
+               "type":"origins:and",
+               "conditions":[
+                  {
+                     "type":"origins:ingredient",
+                     "ingredient":{
+                        "item":"minecraft:clay_ball"
+                     }
+                  },
+                  {
+                     "type":"origins:custom_data",
+                     "nbt":"{thaumaturge:thaumometer}"
+                  }
+               ],
+               "inverted": true
+            }
+         ]
       },
       "text":{
          "type":"translatable",
@@ -183,7 +225,7 @@
                {
                   "type":"origins:ingredient",
                   "ingredient":{
-                     "item":"minecraft:clock"
+                     "item":"minecraft:clay_ball"
                   }
                },
                {
@@ -222,7 +264,7 @@
                {
                   "type":"origins:ingredient",
                   "ingredient":{
-                     "item":"minecraft:clock"
+                     "item":"minecraft:clay_ball"
                   }
                },
                {
@@ -261,7 +303,7 @@
                  {
                     "type":"origins:ingredient",
                     "ingredient":{
-                       "item":"minecraft:clock"
+                       "item":"minecraft:clay_ball"
                     }
                  },
                  {
