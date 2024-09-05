@@ -61,8 +61,8 @@
                                        },
                                        {
                                           "type":"origins:grant_power",
-                                          "power":"origins-classes:thaumaturge/materials/thaumic_leather/auram_bath",
-                                          "source":"origins-classes:thaumaturge/materials/thaumic_leather/auram_bath"
+                                          "power":"origins-classes:thaumaturge/materials/thaumic_leather/praecantatio_infusion",
+                                          "source":"origins-classes:thaumaturge/materials/thaumic_leather/praecantatio_infusion"
                                        },
                                        {
                                           "type":"origins:execute_command",
