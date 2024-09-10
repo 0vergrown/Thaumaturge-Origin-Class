@@ -1,0 +1,50 @@
+[
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "translate": "item_modifier.thaumaturge.lesser_foci.name",
+        "bold": false,
+        "italic": false,
+        "underlined": false,
+        "strikethrough": false,
+        "obfuscated": false
+      }
+    },
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        {
+          "translate": "item_modifier.thaumaturge.lesser_foci.lore",
+          "color": "gray",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false
+        }
+      ],
+      "mode": "replace_all"
+    },
+    {
+      "function": "minecraft:limit_count",
+      "limit": 1
+    },
+    {
+      "function": "minecraft:set_components",
+      "components": {
+        "minecraft:max_stack_size": 1,
+        "minecraft:rarity": "uncommon"
+      }
+    },
+    {
+      "function": "minecraft:set_custom_data",
+      "tag": "{thaumaturge:lesser_foci}"
+    },
+    {
+      "function": "minecraft:set_custom_model_data",
+      "value": 493821
+    }
+  ]  

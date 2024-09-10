@@ -93,7 +93,16 @@
                "advancement":"origins-classes:thaumaturge/fundamentals/touch_of_the_unknown"
             }
          ]
-      }
+      },
+      "fabric:load_conditions": [
+         {
+             "condition": "apoli:any_namespace_loaded",
+             "namespaces": [
+                 "modonomicon"
+             ],
+             "inverted": true
+         }
+     ]
    },
    "generate_in_inventory":{
       "type":"origins:action_over_time",
@@ -149,6 +158,18 @@
          },
          "comparison":"!=",
          "compare_to":0
-      }
+      },
+      "fabric:load_conditions": [
+         {
+             "condition": "apoli:any_namespace_loaded",
+             "namespaces": [
+                 "modonomicon"
+             ],
+             "inverted": true
+         }
+     ]
+   },
+   "modonomicon":{
+      "type": "origins:simple"
    }
 }
