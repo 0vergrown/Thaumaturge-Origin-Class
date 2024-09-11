@@ -114,6 +114,30 @@
          "required":false
       },
       {
+         "id":"minecraft:chest_minecart",
+         "required":false
+      },
+      {
+         "id":"minecraft:tnt_minecart",
+         "required":false
+      },
+      {
+         "id":"minecraft:hopper_minecart",
+         "required":false
+      },
+      {
+         "id":"minecraft:command_block_minecart",
+         "required":false
+      },
+      {
+         "id":"minecraft:furnace_minecart",
+         "required":false
+      },
+      {
+         "id":"minecraft:spawner_minecart",
+         "required":false
+      },
+      {
          "id":"minecraft:heavy_weighted_pressure_plate",
          "required":false
       },
@@ -182,7 +206,7 @@
          "required":false
       },
       {
-         "id":"minecraft:powered_rail",
+         "id":"#minecraft:rails",
          "required":false
       },
       {
@@ -190,7 +214,7 @@
          "required":false
       },
       {
-         "id":"minecraft:melon_slice",
+         "id":"minecraft:glistering_melon_slice",
          "required":false
       },
       {

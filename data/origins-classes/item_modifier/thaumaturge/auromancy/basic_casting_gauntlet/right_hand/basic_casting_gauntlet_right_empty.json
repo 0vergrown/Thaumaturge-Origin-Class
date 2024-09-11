@@ -28,8 +28,13 @@
       "mode": "replace_all"
     },
     {
+      "function": "minecraft:limit_count",
+      "limit": 1
+    },
+    {
       "function": "minecraft:set_components",
       "components": {
+        "minecraft:max_stack_size": 1,
         "minecraft:rarity": "uncommon"
       }
     },
@@ -39,6 +44,6 @@
     },
     {
       "function": "minecraft:set_custom_model_data",
-      "value": 193337
+      "value": 854308
     }
-  ]  
+]  

@@ -1,0 +1,33 @@
+{
+  "category": "thaumonomicon:fundamentals",
+  "name": "book.thaumaturge.thaumonomicon.categories_fundamentals.first_steps.name",
+  "description": "book.thaumaturge.thaumonomicon.categories_fundamentals.first_steps.description",
+  "icon": {
+    "item": "minecraft:book"
+  },
+  "x": 0,
+  "y": 0,
+  "sort_number": 0,
+  "hide_while_locked": false,
+  "show_when_any_parent_unlocked": false,
+  "background_u_index": 0,
+  "background_v_index": 0,
+  "pages": [
+    {
+      "type": "modonomicon:text",
+      "anchor": "thaumonomicon_first_steps_page_1",
+      "title": "book.modonomicon.demo.formatting.basic.page1.title",
+      "use_markdown_in_title": false,
+      "show_title_separator": true,
+      "text": "book.thaumaturge.thaumonomicon.fundamentals_page_1"
+    },
+    {
+      "type": "modonomicon:text",
+      "anchor": "thaumonomicon_first_steps_page_2",
+      "title": "book.modonomicon.demo.formatting.basic.page1.title",
+      "use_markdown_in_title": false,
+      "show_title_separator": true,
+      "text": "book.thaumaturge.thaumonomicon.fundamentals_page_2"
+    }
+  ]
+}

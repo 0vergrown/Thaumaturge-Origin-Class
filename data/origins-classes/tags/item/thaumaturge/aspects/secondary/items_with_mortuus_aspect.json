@@ -2,7 +2,15 @@
     "replace": false,
     "values": [
         {
-			"id": "minecraft:rotten_flesh",
+			"id": "#minecraft:skulls",
+			"required": false
+		},
+        {
+			"id": "minecraft:spider_eye",
+			"required": false
+		},
+		{
+			"id": "minecraft:poisonous_potato",
 			"required": false
 		},
         {
@@ -11,6 +19,18 @@
 		},
         {
 			"id": "minecraft:dead_bush",
+			"required": false
+		},
+		{
+			"id": "minecraft:bone_meal",
+			"required": false
+		},
+		{
+			"id": "minecraft:bone",
+			"required": false
+		},
+		{
+			"id": "minecraft:fermented_spider_eye",
 			"required": false
 		}
     ]

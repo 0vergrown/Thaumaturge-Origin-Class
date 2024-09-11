@@ -12,7 +12,7 @@
       "origins-classes:thaumaturge/alchemy/alchemical_potions/user_action/potion_of_frostbite",
       
       "origins-classes:thaumaturge/auromancy/vis_resonator",
-      "origins-classes:thaumaturge/auromancy/basic_casting_gauntlet"
+      "origins-classes:thaumaturge/auromancy/thaumic_gauntlet/basic_casting_gauntlet"
    ],
    "icon":{
       "id":"minecraft:player_head",

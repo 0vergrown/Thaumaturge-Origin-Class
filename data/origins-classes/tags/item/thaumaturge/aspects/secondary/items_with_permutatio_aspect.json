@@ -1,21 +1,17 @@
 {
     "replace": false,
     "values": [
-        {
-			"id": "minecraft:ender_pearl",
-			"required": false
-		},
-        {
-			"id": "minecraft:redstone",
+		{
+			"id": "minecraft:ender_chest",
 			"required": false
 		},
 		{
-			"id": "#minecraft:lapis_ores",
+			"id": "minecraft:beacon",
 			"required": false
 		},
-        {
-			"id": "minecraft:lapis_lazuli",
-			"required": false
-		}
+		{
+			"id":"minecraft:hopper_minecart",
+			"required":false
+		 }
     ]
 }

@@ -1,0 +1,17 @@
+{
+  "name": "book.thaumaturge.thaumonomicon.categories_fundamentals.name",
+  "description": "book.thaumaturge.thaumonomicon.categories_fundamentals.description",
+  "display_mode": "node",
+  "icon": {
+    "item": "minecraft:amethyst_shard"
+  },
+  "sort_number": 0,
+  "background": "thaumaturge:textures/gui/thaumonomicon/categories/fundamentals.png",
+  "background_height": 512,
+  "background_width": 512,
+  "max_scroll_x": 512,
+  "max_scroll_y": 512,
+  "background_texture_zoom_multiplier": 1.0,
+  "entry_textures": "modonomicon:textures/gui/entry_textures.png",
+  "show_category_button": true
+}
