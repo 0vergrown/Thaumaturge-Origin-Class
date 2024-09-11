@@ -6,7 +6,7 @@
 			"required": false
 		},
         {
-			"id": "minecraft:wither_skeleton_skull",
+			"id": "#minecraft:skulls",
 			"required": false
 		},
         {
@@ -15,6 +15,10 @@
 		},
 		{
 			"id": "minecraft:soul_soil",
+			"required": false
+		},
+		{
+			"id": "minecraft:end_crystal",
 			"required": false
 		}
     ]
