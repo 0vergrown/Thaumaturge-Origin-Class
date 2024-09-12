@@ -2,7 +2,7 @@
     "replace": false,
     "values": [
         {
-            "id": "minecraft:arrow",
+            "id": "#minecraft:arrows",
             "required": false
         },
         {
@@ -11,6 +11,18 @@
         },
         {
             "id": "#minecraft:swords",
+            "required": false
+        },
+        {
+            "id": "minecraft:green_dye",
+            "required": false
+        },
+        {
+            "id": "minecraft:dispenser",
+            "required": false
+        },
+        {
+            "id": "minecraft:cactus",
             "required": false
         }
     ]

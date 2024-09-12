@@ -418,6 +418,10 @@
 			"required": false
 		},
 		{
+			"id": "minecraft:daylight_detector",
+			"required": false
+		},
+		{
 			"id": "minecraft:sugar",
 			"required": false
 		},

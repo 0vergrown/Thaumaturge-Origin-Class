@@ -65,6 +65,14 @@
 			"id": "minecraft:saddle",
 			"required": false
 		},
+		{
+			"id": "minecraft:lead",
+			"required": false
+		},
+		{
+			"id": "minecraft:name_tag",
+			"required": false
+		},
         {
 			"id": "minecraft:leather",
 			"required": false

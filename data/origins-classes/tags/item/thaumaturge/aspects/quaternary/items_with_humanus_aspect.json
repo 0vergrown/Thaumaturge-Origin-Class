@@ -6,11 +6,15 @@
             "required": false
         },
         {
-            "id": "minecraft:villager_spawn_egg",
+            "id": "minecraft:zombie_head",
             "required": false
         },
         {
-            "id": "minecraft:compass",
+            "id": "minecraft:music_disc_mall",
+            "required": false
+        },
+        {
+            "id": "minecraft:rotten_flesh",
             "required": false
         }
     ]
