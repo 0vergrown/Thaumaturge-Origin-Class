@@ -16,7 +16,7 @@
                       },
                       "item_action":{
                          "type":"origins:modify",
-                         "modifier":"origins-classes:thaumaturge/auromancy/lesser_foci"
+                         "modifier":"origins-classes:thaumaturge/auromancy/foci/lesser/lesser_foci"
                       }
                    },
                    {

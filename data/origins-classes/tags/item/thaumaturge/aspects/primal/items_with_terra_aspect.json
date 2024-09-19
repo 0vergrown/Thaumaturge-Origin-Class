@@ -18,15 +18,15 @@
 			"required": false
 		},
 		{
-			"id": "#minecraft:stone_brick_stairs",
+			"id": "minecraft:stone_brick_stairs",
 			"required": false
 		},
 		{
-			"id": "#minecraft:stone_brick_slab",
+			"id": "minecraft:stone_brick_slab",
 			"required": false
 		},
 		{
-			"id": "#minecraft:stone_brick_wall",
+			"id": "minecraft:stone_brick_wall",
 			"required": false
 		},
         {
@@ -95,6 +95,14 @@
 		},
 		{
 			"id": "minecraft:stone",
+			"required": false
+		},
+		{
+			"id": "minecraft:stone_stairs",
+			"required": false
+		},
+		{
+			"id": "minecraft:stone_slab",
 			"required": false
 		},
 		{

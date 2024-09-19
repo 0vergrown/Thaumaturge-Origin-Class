@@ -29,7 +29,7 @@
        "recipe":"origins-classes:thaumaturge_vis_resonator",
        "item_action":{
           "type":"origins:modify",
-          "modifier":"origins-classes:thaumaturge/auromancy/vis_resonator"
+          "modifier":"origins-classes:thaumaturge/auromancy/foci/vis_resonator"
        }
     },
     "put_lesser_foci_inside_vis_resonator":{
@@ -79,7 +79,7 @@
        },
        "result_item_action":{
           "type":"origins:modify",
-          "modifier":"origins-classes:thaumaturge/auromancy/lesser_foci_inside_vis_resonator"
+          "modifier":"origins-classes:thaumaturge/auromancy/foci/lesser/lesser_foci_inside_vis_resonator"
        },
        "entity_action":{
           "type":"origins:and",
@@ -151,7 +151,7 @@
       },
       "result_item_action":{
          "type":"origins:modify",
-         "modifier":"origins-classes:thaumaturge/auromancy/advanced_foci_inside_vis_resonator"
+         "modifier":"origins-classes:thaumaturge/auromancy/foci/advanced/advanced_foci_inside_vis_resonator"
       },
       "entity_action":{
          "type":"origins:and",
@@ -223,7 +223,7 @@
       },
       "result_item_action":{
          "type":"origins:modify",
-         "modifier":"origins-classes:thaumaturge/auromancy/greater_foci_inside_vis_resonator"
+         "modifier":"origins-classes:thaumaturge/auromancy/foci/greater/greater_foci_inside_vis_resonator"
       },
       "entity_action":{
          "type":"origins:and",

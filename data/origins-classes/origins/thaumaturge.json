@@ -10,6 +10,7 @@
 
       "origins-classes:thaumaturge/alchemy/alchemical_potions/user_action/potion_of_vitality",
       "origins-classes:thaumaturge/alchemy/alchemical_potions/user_action/potion_of_frostbite",
+      "origins-classes:thaumaturge/alchemy/foci/recipe/lesser_foci",
       
       "origins-classes:thaumaturge/auromancy/vis_resonator",
       "origins-classes:thaumaturge/auromancy/thaumic_gauntlet/basic_casting_gauntlet"

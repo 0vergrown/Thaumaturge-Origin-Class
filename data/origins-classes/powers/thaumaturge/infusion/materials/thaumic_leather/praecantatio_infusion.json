@@ -1,0 +1,59 @@
+{
+   "type": "origins:action_over_time",
+   "rising_action": {
+       "type": "origins:execute_command",
+       "command": "say hi"
+   },
+   "interval": 1,
+   "condition": {
+       "type": "origins:and",
+       "conditions": [
+           {
+               "type": "apoli:entity_in_radius",
+               "bientity_condition":{
+                   "type": "origins:target_condition",
+                   "condition": {
+                       "type": "origins:and",
+                       "conditions": [
+                           {
+                               "type": "origins:entity_type",
+                               "entity_type": "minecraft:item"
+                           },
+                           {
+                               "type": "origins:nbt",
+                               "nbt": "{Item:{id:\"minecraft:rabbit_hide\",count:1,components:{\"minecraft:custom_data\":{thaumaturge:auram_infused_rabbit_hide}}}}"
+                           }
+                       ]
+                   }
+               },
+               "shape":"cube",
+               "radius":2.00,
+               "comparison":"==",
+               "compare_to": 1
+           },
+           {
+               "type": "apoli:entity_in_radius",
+               "bientity_condition":{
+                   "type": "origins:target_condition",
+                   "condition": {
+                       "type": "origins:and",
+                       "conditions": [
+                           {
+                               "type": "origins:entity_type",
+                               "entity_type": "minecraft:item"
+                           },
+                           {
+                               "type": "origins:nbt",
+                               "nbt": "{Item:{id:\"minecraft:amethyst_shard\",count:1,components:{\"minecraft:custom_data\":{thaumaturge:praecantatio_vis_crystal}}}}"
+                           }
+                       ]
+                   }
+               },
+               "shape":"cube",
+               "radius":2.00,
+               "comparison":"==",
+               "compare_to": 1
+           }
+       ]
+   }
+}

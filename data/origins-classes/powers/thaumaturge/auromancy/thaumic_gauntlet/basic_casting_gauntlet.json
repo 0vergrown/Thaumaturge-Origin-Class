@@ -138,8 +138,8 @@
                  {
                     "type": "origins:power_count",
                     "slot":"mainhand",
-                    "comparison": "!=",
-                    "compare_to": 0
+                    "comparison": "==",
+                    "compare_to": 1
                  }
               ]
            },
@@ -176,8 +176,8 @@
                  {
                     "type": "origins:power_count",
                     "slot":"mainhand",
-                    "comparison": "!=",
-                    "compare_to": 0
+                    "comparison": "==",
+                    "compare_to": 1
                  }
               ]
            },
@@ -204,8 +204,8 @@
                  {
                     "type": "origins:power_count",
                     "slot":"mainhand",
-                    "comparison": "!=",
-                    "compare_to": 0
+                    "comparison": "==",
+                    "compare_to": 1
                  }
               ]
            },

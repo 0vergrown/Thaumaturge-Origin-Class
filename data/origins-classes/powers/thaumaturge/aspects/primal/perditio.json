@@ -134,5 +134,190 @@
          "comparison":"==",
          "compare_to":0
       }
-    }
+    },
+    "create_vis_crystal":{
+      "type":"origins:action_on_being_used",
+      "bientity_action":{
+         "type":"origins:and",
+         "actions":[
+            {
+               "type":"origins:actor_action",
+               "action":{
+                  "type": "origins:and",
+                  "actions": [
+                     {
+                        "type":"origins:give",
+                        "stack":{
+                           "id":"minecraft:amethyst_shard",
+                           "count":1
+                        },
+                        "item_action":{
+                           "type":"origins:modify",
+                           "modifier":"origins-classes:thaumaturge/aspects/vis_crystals/primal/perditio"
+                        }
+                     },
+                     {
+                        "type":"origins:play_sound",
+                        "sound":"minecraft:item.bottle.fill",
+                        "volume":1.00,
+                        "pitch":0.50
+                     }
+                  ]
+               }
+            },
+            {
+               "type":"origins:target_action",
+               "action":{
+                  "type":"origins:and",
+                  "actions":[
+                     {
+                        "type": "origins:if_else",
+                        "condition": {
+                            "type": "origins:in_block",
+                            "block_condition": {
+                              "type": "origins:and",
+                              "conditions": [
+                                  {
+                                    "type": "origins:block",
+                                    "block": "minecraft:water_cauldron"
+                                  },
+                                  {      
+                                      "type": "origins:block_state",
+                                      "property":"level",
+                                      "comparison":"==",
+                                      "compare_to": 1
+                                  }
+                              ]
+                            }
+                        },
+                        "if_action": {
+                           "type":"origins:chance",
+                           "success_action":{
+                              "type":"origins:block_action_at",
+                              "block_action":{
+                                 "type": "origins:set_block",
+                                 "block": "minecraft:cauldron"
+                              }
+                           },
+                           "chance":0.50
+                        },
+                        "else_action": {
+                           "type":"origins:chance",
+                           "success_action":{
+                              "type":"origins:block_action_at",
+                              "block_action":{
+                                 "type":"origins:modify_block_state",
+                                 "property":"level",
+                                 "operation":"add",
+                                 "change":-1,
+                                 "cycle":false
+                              }
+                           },
+                           "chance":0.50
+                        }
+                     },
+                     {
+                        "type":"origins:change_resource",
+                        "resource":"origins-classes:thaumaturge/aspects/primal/perditio_resource",
+                        "change":0,
+                        "operation":"set"
+                     },
+                     {
+                        "type":"origins:change_resource",
+                        "resource":"origins-classes:thaumaturge/aspects/secondary/vitreus_resource",
+                        "change":0,
+                        "operation":"set"
+                     },
+                     {
+                        "type":"origins:play_sound",
+                        "sound":"minecraft:entity.boat.paddle_water",
+                        "volume":1.00,
+                        "pitch":1.00
+                     },
+                     {
+                        "type":"origins:play_sound",
+                        "sound":"minecraft:entity.firework_rocket.blast",
+                        "volume":0.40,
+                        "pitch":0.50
+                     }
+                  ]
+               }
+            }
+         ]
+      },
+      "held_item_action":{
+         "type":"origins:consume",
+         "amount":1
+      },
+      "bientity_condition":{
+         "type":"origins:and",
+         "conditions":[
+            {
+               "type":"origins:target_condition",
+               "condition":{
+                  "type":"origins:in_block",
+                  "block_condition":{
+                     "type":"origins:and",
+                     "conditions":[
+                        {
+                           "type":"origins:block",
+                           "block":"minecraft:water_cauldron"
+                        },
+                        {
+                           "type":"origins:offset",
+                           "condition":{
+                              "type":"origins:or",
+                              "conditions":[
+                                 {
+                                    "type":"origins:block",
+                                    "block":"minecraft:fire"
+                                 },
+                                 {
+                                    "type":"origins:block",
+                                    "block":"minecraft:lava"
+                                 },
+                                 {
+                                    "type":"origins:block",
+                                    "block":"minecraft:soul_campfire"
+                                 },
+                                 {
+                                    "type":"origins:block",
+                                    "block":"minecraft:campfire"
+                                 }
+                              ]
+                           },
+                           "y":-1
+                        }
+                     ]
+                  }
+               }
+            },
+            {
+               "type":"origins:actor_condition",
+               "condition":{
+                  "type":"origins:origin",
+                  "origin":"origins-classes:thaumaturge",
+                  "layer":"origins:class"
+               }
+            }
+         ]
+      },
+      "item_condition":{
+         "type":"origins:ingredient",
+         "ingredient":{
+            "item": "minecraft:amethyst_shard"
+         }
+      },
+      "hands":[
+         "main_hand"
+      ],
+      "action_result":"success",
+      "priority":0,
+      "condition":{
+         "type":"origins:resource",
+         "resource":"origins-classes:thaumaturge/aspects/primal/perditio_resource",
+         "comparison":"==",
+         "compare_to":1
+      }
+   }
 }

@@ -68,8 +68,8 @@
                               },
                               {
                                  "type":"origins:grant_power",
-                                 "power":"origins-classes:thaumaturge/materials/thaumic_leather/auram_bath",
-                                 "source":"origins-classes:thaumaturge/materials/thaumic_leather/auram_bath"
+                                 "power":"origins-classes:thaumaturge/alchemy/materials/thaumic_leather/auram_infused_rabbit_hide",
+                                 "source":"origins-classes:thaumaturge/alchemy/materials/thaumic_leather/auram_infused_rabbit_hide"
                               },
                               {
                                  "type":"origins:execute_command",

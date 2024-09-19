@@ -2,16 +2,32 @@
     "replace": false,
     "values": [
         {
-            "id": "minecraft:nether_wart",
+            "id": "minecraft:mycelium",
             "required": false
         },
         {
-            "id": "minecraft:warped_fungus",
-            "required": false
-        },
+			"id": "minecraft:nether_wart_block",
+			"required": false
+		},
+		{
+			"id": "minecraft:red_nether_bricks",
+			"required": false
+		},
+		{
+			"id": "minecraft:red_nether_brick_slab",
+			"required": false
+		},
+		{
+			"id": "minecraft:red_nether_brick_stairs",
+			"required": false
+		},
+		{
+			"id": "minecraft:red_nether_brick_wall",
+			"required": false
+		},
         {
-            "id": "minecraft:crimson_fungus",
-            "required": false
-        }
+			"id": "minecraft:nether_wart",
+			"required": false
+		}
     ]
 }

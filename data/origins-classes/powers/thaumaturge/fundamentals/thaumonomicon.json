@@ -1,6 +1,6 @@
 {
    "type":"origins:multiple",
-   "create":{
+   "create_in_vanilla":{
       "type":"origins:action_on_block_use",
       "block_action":{
          "type":"origins:and",
@@ -94,15 +94,17 @@
             }
          ]
       },
-      "fabric:load_conditions": [
+      "fabric:load_conditions":[
          {
-             "condition": "apoli:any_namespace_loaded",
-             "namespaces": [
-                 "modonomicon"
-             ]
+            "condition":"fabric:not",
+            "value":{
+               "condition":"fabric:any_mods_loaded",
+               "values":[
+                  "modonomicon"
+               ]
+            }
          }
-     ],
-     "inverted": true
+      ]
    },
    "generate_in_inventory":{
       "type":"origins:action_over_time",
@@ -159,6 +161,112 @@
          "comparison":"!=",
          "compare_to":0
       },
+      "fabric:load_conditions":[
+         {
+            "condition":"fabric:not",
+            "value":{
+               "condition":"fabric:any_mods_loaded",
+               "values":[
+                  "modonomicon"
+               ]
+            }
+         }
+      ]
+   },
+   "create_with_modonomicon":{
+      "type":"origins:action_on_block_use",
+      "block_action":{
+         "type":"origins:and",
+         "actions":[
+            {
+               "type":"origins:execute_command",
+               "command":"playsound minecraft:block.amethyst_block.chime block @p ~ ~ ~ 1.00 0.90 1.00"
+            },
+            {
+               "type":"origins:delay",
+               "action":{
+                  "type":"origins:and",
+                  "actions":[
+                     {
+                        "type":"origins:execute_command",
+                        "command":"playsound minecraft:entity.firework_rocket.blast block @p ~ ~ ~ 0.40 1.00 0.40"
+                     },
+                     {
+                        "type":"origins:execute_command",
+                        "command":"particle minecraft:witch ~ ~ ~ 0.922 0.314 0.314 0.0 16 normal @a"
+                     },
+                     {
+                        "type":"origins:execute_command",
+                        "command":"particle minecraft:cloud ~ ~ ~ 0.922 0.314 0.314 0.0 16 normal @a"
+                     },
+                     {
+                        "type":"origins:set_block",
+                        "block":"minecraft:air"
+                     },
+                     {
+                        "type":"origins:spawn_entity",
+                        "entity_type":"minecraft:item",
+                        "tag":"{Item:{id:\"modonomicon:modonomicon\",count:1,components:{\"minecraft:rarity\":\"rare\",\"minecraft:written_book_content\":{title:\"§kThaumonomicon\",author:\"§kAzanor\"}}}}"
+                     }
+                  ]
+               },
+               "ticks":70
+            }
+         ]
+      },
+      "block_condition":{
+         "type":"origins:block",
+         "block":"minecraft:bookshelf"
+      },
+      "item_condition":{
+         "type":"origins:and",
+         "conditions":[
+            {
+               "type":"origins:ingredient",
+               "ingredient":{
+                  "item":"minecraft:sugar"
+               }
+            },
+            {
+               "type":"origins:custom_data",
+               "nbt":"{thaumaturge:salis_mundus}"
+            }
+         ]
+      },
+      "directions":[
+         "north",
+         "east",
+         "south",
+         "west",
+         "up",
+         "down"
+      ],
+      "hands":[
+         "main_hand"
+      ],
+      "held_item_action":{
+         "type":"origins:consume",
+         "amount":1
+      },
+      "usage_phases":[
+         "item"
+      ],
+      "action_result":"success",
+      "condition":{
+         "type":"origins:and",
+         "conditions":[
+            {
+               "type":"origins:resource",
+               "resource":"origins-classes:thaumaturge/fundamentals/strange_dreams_sleep_detect_resource",
+               "comparison":"==",
+               "compare_to":1
+            },
+            {
+               "type":"origins:advancement",
+               "advancement":"origins-classes:thaumaturge/fundamentals/touch_of_the_unknown"
+            }
+         ]
+      },
       "fabric:load_conditions": [
          {
              "condition": "apoli:any_namespace_loaded",
@@ -166,10 +274,6 @@
                  "modonomicon"
              ]
          }
-     ],
-     "inverted": true
-   },
-   "modonomicon":{
-      "type": "origins:simple"
+     ]
    }
 }
