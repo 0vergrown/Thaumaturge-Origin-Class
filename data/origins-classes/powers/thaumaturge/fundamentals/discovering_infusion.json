@@ -65,6 +65,11 @@
                                        },
                                        {
                                           "type":"origins:grant_power",
+                                          "power":"origins-classes:thaumaturge/infusion/altar",
+                                          "source":"origins-classes:thaumaturge/infusion/altar"
+                                       },
+                                       {
+                                          "type":"origins:grant_power",
                                           "power":"origins-classes:thaumaturge/infusion/materials/thaumic_leather/praecantatio_infusion",
                                           "source":"origins-classes:thaumaturge/infusion/materials/thaumic_leather/praecantatio_infusion"
                                        }

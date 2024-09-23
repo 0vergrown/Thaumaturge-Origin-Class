@@ -68,7 +68,7 @@
                     },
                     "item_action": {
                         "type": "origins:modify",
-                        "modifier": "origins-classes:thaumaturge/auromancy/touch_spells/aspects/primal/aer/"
+                        "modifier": "origins-classes:thaumaturge/aspects/foci/lesser/aer"
                     }
                 },
                 {
@@ -78,6 +78,65 @@
                    "pitch":0.80
                 }
             ]
-        }
+        },
+        "item_action": {
+            "type": "origins:modify",
+            "modifier": "origins-classes:thaumaturge/auromancy/thaumic_gauntlet/reset"
+        },
+        "item_condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type":"origins:and",
+                    "conditions":[
+                       {
+                          "type":"origins:ingredient",
+                          "ingredient":{
+                             "item":"minecraft:leather_chestplate"
+                          }
+                       },
+                       {
+                          "type":"origins:custom_data",
+                          "nbt":"{thaumaturge:basic_casting_gauntlet}"
+                       }
+                    ]
+                },
+                {
+                    "type":"origins:and",
+                    "conditions":[
+                       {
+                          "type":"origins:ingredient",
+                          "ingredient":{
+                             "item":"minecraft:rabbit_foot"
+                          }
+                       },
+                       {
+                          "type":"origins:custom_data",
+                          "nbt":"{thaumaturge:advanced_manipulation_gauntlet}"
+                       }
+                    ]
+                },
+                {
+                    "type":"origins:and",
+                    "conditions":[
+                       {
+                          "type":"origins:ingredient",
+                          "ingredient":{
+                             "item":"minecraft:rabbit_foot"
+                          }
+                       },
+                       {
+                          "type":"origins:custom_data",
+                          "nbt":"{thaumaturge:arcane_engineering_gauntlet}"
+                       }
+                    ]
+                }
+            ]
+        },
+        "trigger": "instant",
+        "priority": 0,
+        "condition":{
+            "type":"origins:sneaking"
+         }
     }
 }

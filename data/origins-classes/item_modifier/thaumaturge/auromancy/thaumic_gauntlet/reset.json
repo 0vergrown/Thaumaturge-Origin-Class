@@ -1,0 +1,22 @@
+[
+    {
+        "function": "apoli:remove_power",
+        "power": "origins-classes:thaumaturge/auromancy/touch_spells/aspects/primal/aer/zephyr_strike",
+        "slot": "mainhand"
+    },
+    {
+        "function": "apoli:remove_power",
+        "power": "origins-classes:thaumaturge/auromancy/touch_spells/aspects/primal/aer/punch",
+        "slot": "mainhand"
+    },
+    {
+        "function": "apoli:remove_power",
+        "power": "origins-classes:thaumaturge/auromancy/touch_spells/aspects/primal/aer/punch",
+        "slot": "mainhand"
+    },
+    {
+        "function": "apoli:remove_power",
+        "power": "origins-classes:thaumaturge/auromancy/touch_spells/aspects/primal/aer/punch",
+        "slot": "mainhand"
+    }
+]

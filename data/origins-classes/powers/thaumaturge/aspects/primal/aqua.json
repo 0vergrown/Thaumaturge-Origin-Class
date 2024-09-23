@@ -223,12 +223,6 @@
                         "operation":"set"
                      },
                      {
-                        "type":"origins:change_resource",
-                        "resource":"origins-classes:thaumaturge/aspects/secondary/vitreus_resource",
-                        "change":0,
-                        "operation":"set"
-                     },
-                     {
                         "type":"origins:play_sound",
                         "sound":"minecraft:entity.boat.paddle_water",
                         "volume":1.00,

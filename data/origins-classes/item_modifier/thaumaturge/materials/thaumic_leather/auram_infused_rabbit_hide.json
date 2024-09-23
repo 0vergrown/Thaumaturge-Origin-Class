@@ -14,22 +14,6 @@
       }
     },
     {
-      "function": "minecraft:set_lore",
-      "entity": "this",
-      "lore": [
-        {
-          "translate": "item_modifier.thaumaturge.auram_infused_rabbit_hide.lore",
-          "color": "#FFC0FF",
-          "bold": false,
-          "italic": true,
-          "underlined": false,
-          "strikethrough": false,
-          "obfuscated": false
-        }
-      ],
-      "mode": "replace_all"
-    },
-    {
       "function": "minecraft:set_custom_data",
       "tag": "{thaumaturge:auram_infused_rabbit_hide}"
     },
