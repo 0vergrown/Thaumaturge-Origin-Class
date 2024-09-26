@@ -6,12 +6,12 @@
     },
     {
         "function": "apoli:remove_power",
-        "power": "origins-classes:thaumaturge/auromancy/touch_spells/aspects/primal/aer/punch",
+        "power": "origins-classes:thaumaturge/auromancy/touch_spells/aspects/primal/aer/tempest_blast",
         "slot": "mainhand"
     },
     {
         "function": "apoli:remove_power",
-        "power": "origins-classes:thaumaturge/auromancy/touch_spells/aspects/primal/aer/punch",
+        "power": "origins-classes:thaumaturge/auromancy/touch_spells/aspects/primal/aer/aerial_ascend",
         "slot": "mainhand"
     },
     {

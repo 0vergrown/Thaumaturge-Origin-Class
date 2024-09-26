@@ -4,7 +4,7 @@
        "entity":"this",
        "target":"custom_name",
        "name":{
-          "translate":"item_modifier.thaumaturge.lesser_foci.name",
+          "translate":"item_modifier.thaumaturge.greater_foci.name",
           "bold":false,
           "italic":false,
           "underlined":false,
@@ -17,7 +17,7 @@
        "entity":"this",
        "lore":[
           {
-             "translate":"item_modifier.thaumaturge.lesser_aer_foci.lore",
+             "translate":"item_modifier.thaumaturge.greater_aer_foci.lore",
              "color":"yellow",
              "bold":false,
              "italic":false,
@@ -41,10 +41,10 @@
     },
     {
        "function":"minecraft:set_custom_data",
-       "tag":"{thaumaturge:lesser_aer_foci}"
+       "tag":"{thaumaturge:greater_aer_foci}"
     },
     {
       "function": "minecraft:set_custom_model_data",
-      "value": 520663
+      "value": 700838
     }
 ]

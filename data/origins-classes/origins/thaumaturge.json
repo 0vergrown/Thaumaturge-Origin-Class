@@ -16,7 +16,9 @@
       "origins-classes:thaumaturge/auromancy/thaumic_gauntlet/basic_casting_gauntlet",
       "origins-classes:thaumaturge/auromancy/thaumic_gauntlet/advanced_manipulation_gauntlet",
       
-      "origins-classes:thaumaturge/touch_spells/aspects/primal/aer/apply_lesser_foci"
+      "origins-classes:thaumaturge/auromancy/touch_spells/aspects/primal/aer/apply_lesser_foci",
+      "origins-classes:thaumaturge/auromancy/touch_spells/aspects/primal/aer/apply_advanced_foci",
+      "origins-classes:thaumaturge/auromancy/touch_spells/aspects/primal/aer/apply_greater_foci"
    ],
    "icon":{
       "id":"minecraft:player_head",

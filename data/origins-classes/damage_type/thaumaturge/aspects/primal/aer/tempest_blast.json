@@ -1,0 +1,6 @@
+{
+    "message_id": "tempest_blast",
+    "exhaustion": 0.1,
+    "scaling": "always",
+    "death_message_type": "default"
+}  

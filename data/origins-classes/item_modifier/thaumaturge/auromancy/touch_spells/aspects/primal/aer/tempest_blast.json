@@ -1,0 +1,7 @@
+{
+    "function": "apoli:add_power",
+    "power": "origins-classes:thaumaturge/auromancy/touch_spells/aspects/primal/aer/tempest_blast",
+    "slot": "mainhand",
+    "hidden":false,
+    "negative": false
+}
