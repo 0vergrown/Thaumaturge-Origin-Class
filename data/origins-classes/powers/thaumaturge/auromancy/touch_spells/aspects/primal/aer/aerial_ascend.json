@@ -163,7 +163,8 @@
                  "item_action":{
                     "type":"origins:modify",
                     "modifier":"origins-classes:thaumaturge/aspects/foci/primal/greater/aer"
-                 }
+                 },
+                 "preferred_slot": "mainhand"
               },
               {
                  "type":"origins:play_sound",
