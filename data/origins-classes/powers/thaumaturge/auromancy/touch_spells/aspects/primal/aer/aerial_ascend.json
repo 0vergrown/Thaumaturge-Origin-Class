@@ -28,17 +28,7 @@
            "command":"particle dust_color_transition{from_color:[1.0,1.0,1.0],to_color:[0.91,0.91,0.91],scale:1} 0.5 0.5 0.5 0 0 0 0.00 50 force"
         },
         "block_condition": {
-          "type": "origins:and",
-          "conditions": [
-              {
-                "type": "origins:movement_blocking"
-              },
-              {      
-                "type": "origins:in_tag",
-                "tag": "origins-classes:thaumaturge/interactive_blocks",
-                "inverted": true
-              }
-          ]
+         "type": "origins:movement_blocking"
         },
         "directions":[
            "north",
