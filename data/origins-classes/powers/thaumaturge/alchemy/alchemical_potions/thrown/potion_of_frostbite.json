@@ -160,7 +160,7 @@
                    ]
                 },
                 "bientity_condition":{
-                   "type":"origins:and",
+                   "type":"origins:all_of",
                    "conditions":[
                       {
                          "type":"origins:in_entity_set",
@@ -310,7 +310,7 @@
                    ]
                 },
                 "bientity_condition":{
-                   "type":"origins:and",
+                   "type":"origins:all_of",
                    "conditions":[
                       {
                          "type":"origins:in_entity_set",
@@ -334,7 +334,7 @@
        },
        "interval":1,
        "condition":{
-          "type":"origins:or",
+          "type":"origins:any_of",
           "conditions":[
              {
                 "type":"origins:block_collision",

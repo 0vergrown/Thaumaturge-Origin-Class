@@ -38,7 +38,7 @@
                      "condition": {
                          "type": "origins:in_block",
                          "block_condition": {
-                           "type": "origins:and",
+                           "type": "origins:all_of",
                            "conditions": [
                                {
                                  "type": "origins:block",
@@ -80,28 +80,36 @@
                      }
                   },
                   {
-                     "type":"origins:change_resource",
-                     "resource":"origins-classes:thaumaturge/aspects/primal/aqua_resource",
-                     "change":0,
-                     "operation":"set"
+                     "type": "origins:modify_resource",
+                     "modifier": {
+                         "operation": "set_total",
+                         "value": 0.00
+                     },
+                     "resource": "origins-classes:thaumaturge/aspects/primal/aqua_resource"
                   },
                   {
-                     "type":"origins:change_resource",
-                     "resource":"origins-classes:thaumaturge/aspects/secondary/victus_resource",
-                     "change":0,
-                     "operation":"set"
+                     "type": "origins:modify_resource",
+                     "modifier": {
+                         "operation": "set_total",
+                         "value": 0.00
+                     },
+                     "resource": "origins-classes:thaumaturge/aspects/secondary/victus_resource"
                   },
                   {
-                     "type":"origins:change_resource",
-                     "resource":"origins-classes:thaumaturge/aspects/secondary/vitreus_resource",
-                     "change":0,
-                     "operation":"set"
+                     "type": "origins:modify_resource",
+                     "modifier": {
+                         "operation": "set_total",
+                         "value": 0.00
+                     },
+                     "resource": "origins-classes:thaumaturge/aspects/secondary/vitreus_resource"
                   },
                   {
-                     "type":"origins:change_resource",
-                     "resource":"origins-classes:thaumaturge/aspects/tertiary/spiritus_resource",
-                     "change":0,
-                     "operation":"set"
+                     "type": "origins:modify_resource",
+                     "modifier": {
+                         "operation": "set_total",
+                         "value": 0.00
+                     },
+                     "resource": "origins-classes:thaumaturge/aspects/tertiary/spiritus_resource"
                   },
                   {
                      "type":"origins:play_sound",
@@ -125,14 +133,14 @@
       "amount":1
    },
    "bientity_condition":{
-      "type":"origins:and",
+      "type":"origins:all_of",
       "conditions":[
          {
             "type":"origins:target_condition",
             "condition":{
                "type":"origins:in_block",
                "block_condition":{
-                  "type":"origins:and",
+                  "type":"origins:all_of",
                   "conditions":[
                      {
                         "type":"origins:block",
@@ -141,7 +149,7 @@
                      {
                         "type":"origins:offset",
                         "condition":{
-                           "type":"origins:or",
+                           "type":"origins:any_of",
                            "conditions":[
                               {
                                  "type":"origins:block",
@@ -189,7 +197,7 @@
    "action_result":"success",
    "priority":0,
    "condition":{
-      "type":"origins:and",
+      "type":"origins:all_of",
       "conditions":[
          {
             "type":"origins:resource",

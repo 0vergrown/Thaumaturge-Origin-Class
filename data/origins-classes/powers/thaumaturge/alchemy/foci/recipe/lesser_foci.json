@@ -119,14 +119,14 @@
        "amount":1
     },
     "bientity_condition":{
-       "type":"origins:and",
+       "type":"origins:all_of",
        "conditions":[
           {
              "type":"origins:target_condition",
              "condition":{
                 "type":"origins:in_block",
                 "block_condition":{
-                   "type":"origins:and",
+                   "type":"origins:all_of",
                    "conditions":[
                       {
                          "type":"origins:block",
@@ -135,7 +135,7 @@
                       {
                          "type":"origins:offset",
                          "condition":{
-                            "type":"origins:or",
+                            "type":"origins:any_of",
                             "conditions":[
                                {
                                   "type":"origins:block",
@@ -172,7 +172,7 @@
        ]
     },
     "item_condition":{
-      "type": "origins:and",
+      "type": "origins:all_of",
       "conditions": [
           {
             "type": "origins:ingredient",
@@ -192,7 +192,7 @@
     "action_result":"success",
     "priority":0,
     "condition":{
-       "type":"origins:and",
+       "type":"origins:all_of",
        "conditions":[
           {
              "type":"origins:resource",
